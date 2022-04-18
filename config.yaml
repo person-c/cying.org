@@ -1,0 +1,67 @@
+baseurl: "/"
+languageCode: "en-us"
+title: "Wei Cui | "
+theme: "hugo-ivy"
+disqusShortname: "Wei"
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+hasCJKLanguage: true
+enableEmoji: true
+footnotereturnlinkcontents: "↩"
+
+permalinks:
+  cn: "/:sections/:year/:month/:slug/"
+  en: "/:sections/:year/:month/:slug/"
+
+
+menu:
+  main:
+    - name: "About"
+      url: "/en/about/"
+      weight: 1
+    - name: "Blog"
+      url: "/en/"
+      weight: 2
+    - name: "关于"
+      url: "/cn/about/"
+      weight: 3
+    - name: "日志"
+      url: "/cn/"
+      weight: 4
+      
+params:
+  description: "Personal website of Wei Cui; 崔伟的个人网站"
+  footer: "&copy; [Wei Cui(/) 2022 - {Year}"
+  disqusURL: "/"
+  customJS:
+    - "fix-toc.js"
+    - "center-img.js"
+    - "right-quote.js"
+    - "no-highlight.js"
+    - "fix-footnote.js"
+    - "math-code.js"
+    - "external-link.js"
+    - "alt-title.js"
+    - "header-link.js"
+    - "hash-notes.js"
+  
+  MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
+  MathJaxVersion: 2.7.5
+  description: A website built through Hugo and blogdown.
+  favicon: favicon.ico
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang:
+    - r
+    - yaml
+  highlightjsTheme: github
+  highlightjsVersion: 9.12.0
+  logo:
+    alt: Logo
+    height: 50
+    url: logo.png
+    width: 50
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: yes
