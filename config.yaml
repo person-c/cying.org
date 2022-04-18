@@ -29,7 +29,7 @@ menu:
       weight: 4
       
 params:
-  description: "Personal website of Wei Cui; 崔伟的个人网站"
+  description: "Personal website of Wei Cui|"
   footer: "&copy; [Wei Cui(/) 2022 - {Year}"
   disqusURL: "/"
   customJS:
@@ -46,7 +46,6 @@ params:
   
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
-  description: A website built through Hugo and blogdown.
   favicon: favicon.ico
   highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
   highlightjsLang:
