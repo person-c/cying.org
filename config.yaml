@@ -29,7 +29,7 @@ menu:
       weight: 4
       
 params:
-  description: "Personal website of Wei Cui|"
+  description: "Personal website of Wei|"
   footer: "&copy; [Wei Cui(/) 2022 - {Year}"
   disqusURL: "/"
   customJS:
