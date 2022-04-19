@@ -1,6 +1,6 @@
 baseurl: "/"
 languageCode: "en-us"
-title: "Wei Cui | "
+title: "Wei Cui"
 theme: "hugo-ivy"
 disqusShortname: "Wei"
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
@@ -30,7 +30,7 @@ menu:
       
 params:
   description: "Personal website of Wei|"
-  footer: "&copy; [Wei Cui(/) 2022 - {Year}"
+  footer: "&copy; [Wei Cui](/) 2022 - {Year}"
   disqusURL: "/"
   customJS:
     - "fix-toc.js"
