@@ -27,11 +27,28 @@ menu:
     - name: "日志"
       url: "/cn/"
       weight: 4
+
+  cn:
+    - name: "首页"
+      url: "/"
+      weight: 1
+    - name: "关于"
+      url: "/cn/about/"
+      weight: 2
+    - name: "日志"
+      url: "/cn/"
+      weight: 3
+    - name: "简历"
+      url: "/cn/vitae/"
+      weight: 4
+    - name: "English"
+      url: "/en/"
+      weight: 5
       
 params:
   description: "Personal website of Wei|"
   footer: "&copy; [Wei Cui](/) 2022 - {Year}"
-  disqusURL: "/"
+  githubContentURL: "https://github.com/sonwGlint/Myblog/tree/main/content"
   customJS:
     - "fix-toc.js"
     - "center-img.js"
@@ -58,6 +75,11 @@ params:
     height: 50
     url: logo.png
     width: 50
+
+  lang:
+    license:
+      cn: "版权"
+    
 
 markup:
   defaultMarkdownHandler: goldmark

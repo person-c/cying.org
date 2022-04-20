@@ -21,7 +21,7 @@ document.addEventListener('keyup', function(e) {
 </script>
 {{ end }}
 
-{{ partial "disqus.html" . }}
+
 
 {{ partial "custom_js.html" (apply .Site.Params.customJS "print" "utils/" ".") }}
 {{ partial "custom_js.html" .Params.customJS }}
