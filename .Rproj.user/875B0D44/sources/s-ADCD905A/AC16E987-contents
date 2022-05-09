@@ -1,0 +1,21 @@
+---
+title: 假设检验（一）
+author: ''
+date: '2022-05-08'
+slug: '2022-05-08'
+categories: []
+tags: []
+---
+
+
+开始进行假设检验之前我们需要了解一些基本概念、
+
+> 总体（population): A population is the entire group that you want to draw conclusions about.    
+> 样本（sample): A sample is the specific group that you will collect data from.    
+> 无论是总体和样本，我们都可以从多个特征进行刻画，将这个特征量化我们就可得到一系列的点（data point），也就是一系列的数，我们可以对这些数据点求取均值，计算标准差，拟合出它的分布。由总体计算得到的这些值即为总体参数，样本计算得到的即为样本参数。事实上总体参数一般是难以知道的，一般需要通过样本参数进行推断。
+
+> 所谓的假设检验一般是均值的检验，即比较样本均值，与样本均值、总体均值是否相等。一般情况下零假设都是没有差异的情况，即u0 = u1。
+
+# z 检验
+写在行内的公式 \$F(t)=Pr(T<t)\$
+\$$f(x)=\frac{1}{2}\int_0^1\sin^2(tx)dt\$$
