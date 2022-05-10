@@ -8,7 +8,25 @@ tags: []
 ---
 
 
-开始进行假设检验之前我们需要了解一些基本概念、
+开始进行假设检验之前我们需要了解一些基本概念
+
+```{r, warning=FALSE,message=FALSE,echo=FALSE}
+library(tidyverse)
+library(viridis)
+p <- ggplot(data.frame(x = c(-4, 4)), aes(x = x), fill = x) +
+  stat_function(fun = dnorm) +
+  stat_function(fun = dnorm, 
+                xlim = c(-4,-2.96),
+                geom = "area")  +
+  geom_vline(xintercept = -2.96, linetype = "dashed") +
+  annotate("text", x=-2.8, y=0.3, label= "alpha", size=5, parse = TRUE) +
+  geom_vline(xintercept = 2.96, linetype="dashed")+
+  annotate("text", x=3.4, y=0.3, label="1 - alpha", size=5, parse = TRUE)+  
+  labs(x = "X", y = "propability") 
+
+p
+```
+
 
 > 总体（population): A population is the entire group that you want to draw conclusions about.    
 > 样本（sample): A sample is the specific group that you will collect data from.    
@@ -22,14 +40,22 @@ tags: []
 >> $\frac{\sum_{k=1}^nX_k - n \mu}{\sqrt{n} \sigma} \sim N(0,1)$ 
 
 > 改写一下：
->> $\frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \sim N(0,1)$      
->在进行t检验时，我们需要一个标准正态分布的变量，而中心极限定理告诉我们当 $n > 35$， 样本均值的分布近似于标准正态分布。
+>> $\frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \sim N(0,1)$ 
 
->Lyapunov中心极限定理：设随机变量 $X_1, X_2, ..., X_n$，相互独立，记随机变量 $E(X_K) = \mu_k$， $D(X_k) = \sigma_k$,那么，若：
->> 存在正数 $\delta$,使得：
+>在进行t检验时，我们需要一个标准正态分布的变量，而中心极限定理告诉我们当 $n>35$，样本均值的分布近似于标准正态分布。 
+
+>Lyapunov中心极限定理：设随机变量 $X_1, X_2, ..., X_n$，相互独立，记随机变量 $E(X_K) = \mu_k$， $D(X_k) = \sigma_k^2$ ,那么：
+
+>记：
+>> $B_n^2 = \sum_{k=1}^{n} \sigma_k^2$
+
+> 若存在正数 $\delta$,使得当 $n \rightarrow{} \infty$:
+>> $\frac{1}{B_n^{2+ \delta}} \sum_{k=1}^{n}E{{| X_k - \mu_k |}^2} \rightarrow{}  0$
 
 >那么，随机变量之和的标准化变量：
->> $Z_n = \frac{\sum_{k=1}^{n}X_K - E(\sum_{k=1}^{n}X_K)}{\sqrt{D(\sum_{k=1}^{n}X_k)}} =  \frac{\sum_{k=1}^nX_k - \sum_{k=1^n \mu_k}}{B_n}  \sim N(0,1)$
+>> $Z_n = \frac{\sum_{k=1}^{n}X_K - E(\sum_{k=1}^{n}X_K)}{\sqrt{D(\sum_{k=1}^{n}X_k)}} =  \frac{\sum_{k=1}^{n}X_k - \sum_{k=1^n \mu_k}}{B_n}  \sim N(0,1)$
+
+
 
 
 一般我们所说的各种检验比如Z检验，以及T检验主要是根据检验统计量的分布进行划分的。
