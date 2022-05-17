@@ -6,7 +6,8 @@ slug: '2022-05-17'
 categories: []
 tags: []
 ---
-
+<script src="//yihui.org/js/math-code.min.js" defer></script>
+<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
 # 离散分布
