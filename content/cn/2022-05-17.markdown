@@ -6,13 +6,24 @@ slug: '2022-05-17'
 categories: []
 tags: []
 ---
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']]
+
+(function() {
+var i, text, code, codes = document.getElementsByTagName('code');
+for (i = 0; i < codes.length;) {
+  code = codes[i];
+  if (code.parentNode.tagName !== 'PRE' &&
+      code.childElementCount === 0) {
+    text = code.textContent;
+    if (/^\\\((.|\s)+\\\)$/.test(text) ||
+        /^\$(.|\s)+\$$/.test(text) ||
+        /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+      code.outerHTML = code.innerHTML;  // remove <code></code>
+      continue;
+    }
   }
-});
-</script>
+  i++;
+}
+})();
 
 # 离散分布
 
