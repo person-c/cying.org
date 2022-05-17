@@ -6,7 +6,14 @@ slug: test
 categories: []
 tags: []
 ---
-
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
 
 开始进行假设检验之前我们需要了解一些基本概念
 
