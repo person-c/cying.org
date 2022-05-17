@@ -1,0 +1,16 @@
+---
+title: 常见概率分布
+author: ''
+date: '2022-05-17'
+slug: '2022-05-17'
+categories: []
+tags: []
+---
+
+# 离散分布
+
+**二项分布(Binomial Distribution)**：
+> $n$ 重伯努利实验中,若事件 $A$ 成功的概率为 $p$ ，那么事件 $A$ 发生 $k$ 次的概率为：
+>> $ P(X = k) = C_n^k p^k(1-p)^{n-k}, k = 0,1,...,n.$
+
+$\bar{X}$ = $\frac{1}{n} \sum_{i=1}^nX_i$
