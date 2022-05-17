@@ -68,6 +68,8 @@ Z检验要求总体服从于正态分布，并且总体方差已知。
 写在行内的公式 $F(t)=Pr(T<t)$
 \$$f(x)=\frac{1}{2}\int_0^1\sin^2(tx)dt\$$
 
+ \$$f(x)=\frac{1}{2} \int_0^1 \sin^2 (t x) dt\$$
+
 
 # T 检验
 T检验是均值的比较。
@@ -111,5 +113,5 @@ $\frac{(\bar{X_1} - \bar{X_2}) - (\mu_1 - \mu_2)}{\sigma \sqrt{\frac{1}{n_1} + \
 > $\bar{D} = \bar{X_1} - \bar{X_2} \sim N(\mu_1 - \mu_2, \frac{2\sigma^2}{n})  \rightarrow{}  \frac{\bar{D} - (\bar{X_1} - \bar{X_2})}{\sigma \sqrt{\frac{2}{n}}} \sim N(0,1)$ 
 
 由t分布的构造，消去 $\sigma$,得检验统计量：
-> $\frac{\sqrt{n}(\bar{D} - (\mu_1 - \mu_2))}{s_d} \sim t(n - 1)$
+> \$$\frac{\sqrt{n}(\bar{D} - (\mu_1 - \mu_2))}{s_d} \sim t(n - 1)\$$
 
