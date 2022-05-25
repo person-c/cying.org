@@ -8,10 +8,16 @@ slug: "cn/about"
 
 R for data science   
 李东风 [R语言教程](https://www.math.pku.edu.cn/teachers/lidf/)    
-超快的[data.table](https://github.com/Rdatatable/data.table)   
+黄湘云[现代应用统计](https://github.com/XiangyunHuang) 
+邓飞[R语言进阶笔记]https://dengfei2013.gitee.io/r-language-advanced/
+[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)
+
+机器学习mlr3
+超快的[data.table](https://github.com/Rdatatable/data.table)
 
 # 一些论坛
+在线教育平台course
 [R论坛](https://www.r-bloggers.com/)   
 [stackoverflow](https://stackoverflow.com/)    
 [统计之都](https://cosx.org/)    
-全球最大的数字图书馆[zlibary](https://zh.z-lib.org/)
+全球最大的数字图书馆[Zlibary](https://zh.z-lib.org/)

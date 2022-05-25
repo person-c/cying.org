@@ -16,6 +16,10 @@ MathJax.Hub.Config({
 });
 </script>
 
+```{r}
+library(ggplot2)
+```
+
 # 离散分布
 
 **二项分布(Binomial Distribution)**：
@@ -51,6 +55,15 @@ MathJax.Hub.Config({
 > 正态分布含有两个参数 $\mu$，$\sigma$, 其中 $\mu$ 为位置参数，控制曲线在 $x$ 轴上的位置；$\sigma$为尺度参数，用于控制曲线的参数。
 > 记为：$X \sim N(\mu,\sigma)$
 > $E(X) = \mu$, $D(X) = \sigma^2$
+
+```{r}
+base <-
+  ggplot() +
+  xlim(-4, 4)
+base +
+  stat_function(aes(colour = "\u03B1 = 0, \u03C3= 1"), fun = dnorm,
+                args = list(mean = 0, sd = 1))
+```
 
 > 概率密度函数：
 > $$ p(x) = \frac{1}{\sqrt{2 \pi}\sigma} e^{- \frac{(x - \mu)^2}   {2\sigma^2}} $$
