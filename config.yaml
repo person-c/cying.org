@@ -43,7 +43,7 @@ menu:
       weight: 4
     - name: "统计"
       weight: 5
-    - url: "/Statistic/"
+      url: "/Statistic/"
     - name: "简历"
       url: "/cn/vitae/"
       weight: 6
