@@ -51,11 +51,12 @@ menu:
       url: "/en/"
       weight: 7
 
+
   en:
     - name: "Home"
       url: "/"
       weight: 1
-    - name: "about"
+    - name: "About"
       url: "/en/about/"
       weight: 2
     - name: "Blog"
