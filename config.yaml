@@ -42,8 +42,8 @@ menu:
       url: "/Bioinformatics/"
       weight: 4
     - name: "统计"
+      url: "/Statistics/"
       weight: 5
-      url: "/Statistic/"
     - name: "简历"
       url: "/cn/vitae/"
       weight: 6
@@ -74,6 +74,8 @@ menu:
     - name: "中文"
       url: "/cn/"
       weight: 7
+
+  
 
 
 
