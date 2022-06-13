@@ -27,6 +27,7 @@ menu:
     - name: "日志"
       url: "/cn/"
       weight: 4
+    
 
   cn:
     - name: "首页"
@@ -38,15 +39,47 @@ menu:
     - name: "日志"
       url: "/cn/"
       weight: 3
+    - name: "生信"
+      url: "/Bioinformatics/"
+      weight: 4
+    - name: "统计"
+      weight: 5
+    - url: "/R and Statistic/"
     - name: "简历"
       url: "/cn/vitae/"
-      weight: 4
+      weight: 6
     - name: "English"
       url: "/en/"
+      weight: 7
+
+  en:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "about"
+      url: "/en/about/"
+      weight: 2
+    - name: "Blog"
+      url: "/en/"
+      weight: 3
+    - name: "Bioinformatics"
+      url: "/Bioinformatics/"
+      weight: 4
+    - name: "Statistics"
+      url: "/R and Statistic/"
       weight: 5
+    - name: "Vitae"
+      url: "/en/vitae/"
+      weight: 6
+    - name: "中文"
+      url: "/cn/"
+      weight: 7
+
+
+
       
 params:
-  description: "Personal website of Wei|"
+  description: "Wei Cui|崔伟"
   footer: "&copy; [Wei Cui](/) 2022 - {Year}"
   githubContentURL: "https://github.com/sonwGlint/Myblog/tree/main/content"
   customJS:
