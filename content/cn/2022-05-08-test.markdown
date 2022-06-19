@@ -2,7 +2,7 @@
 title: 假设检验（一）
 author: ''
 date: '2022-05-08'
-slug: test
+slug: 假设检验（一）
 categories: []
 tags: []
 ---

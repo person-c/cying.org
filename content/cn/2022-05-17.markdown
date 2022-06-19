@@ -2,7 +2,7 @@
 title: 常见概率分布
 author: ''
 date: '2022-05-17'
-slug: '2022-05-17'
+slug: 常见概率分布
 categories: []
 tags: []
 ---
