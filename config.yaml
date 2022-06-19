@@ -105,12 +105,6 @@ params:
   highlightjsTheme: "github"
   highlightjsVersion: "9.12.0"
   
-  logo:
-    en:
-      img: "/images/logo.png"
-      url: "/"
-      alt: "Wei Cui"
-      tag: ""
 
   lang:
     license:
