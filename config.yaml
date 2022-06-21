@@ -26,6 +26,9 @@ menu:
     - name: "日志"
       url: "/cn/"
       weight: 4
+    - name: "Record|记录"
+      url: "/record/"
+      weight: 5
     
 
   cn:
@@ -38,19 +41,15 @@ menu:
     - name: "日志"
       url: "/cn/"
       weight: 3
-    - name: "生信"
-      url: "/Bioinformatics/"
+    - name: "工作"
+      url: "/work/"
       weight: 4
-    - name: "统计"
-      url: "/Statistics/"
-      weight: 5
     - name: "简历"
       url: "/cn/vitae/"
-      weight: 6
+      weight: 5
     - name: "English"
       url: "/en/"
-      weight: 7
-
+      weight: 6
 
   en:
     - name: "Home"
@@ -62,18 +61,15 @@ menu:
     - name: "Blog"
       url: "/en/"
       weight: 3
-    - name: "Bioinformatics"
-      url: "/Bioinformatics/"
+    - name: "Work"
+      url: "/work/"
       weight: 4
-    - name: "Statistics"
-      url: "/Statistics/"
-      weight: 5
     - name: "Vitae"
       url: "/en/vitae/"
-      weight: 6
+      weight: 5
     - name: "中文"
       url: "/cn/"
-      weight: 7
+      weight: 6
 
   
 
