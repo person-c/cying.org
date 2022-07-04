@@ -1,7 +1,7 @@
 ---
 title: 我的自卑与自信
 author: ''
-date: '2022-07-4'
+date: '2022-07-04'
 slug: inferiority and self-confidence
 ---
 
