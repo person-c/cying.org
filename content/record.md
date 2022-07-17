@@ -19,7 +19,7 @@ The most common way to use as.formula is to convert a string that represents the
 
 To generate expressions from a character vector, use `parse(text=...)`.
 
-tibble要取出一个数或者向量真是麻烦，因为它的数据结构tibbl一直不变，经常想取出一个数结果取出了一个子tibble
+tibble要取出一个数或者向量真是麻烦，因为它的数据结构tibble一直不变，经常想取出一个数结果取出了一个子tibble
 
 根据marker计算几年生存率的 [ROC曲线](https://rpubs.com/IL2/513264)
 
