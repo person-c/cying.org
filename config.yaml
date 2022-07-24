@@ -102,6 +102,13 @@ params:
   highlightjsVersion: "9.12.0"
   
 
+  logo:
+    en:
+      img: "/images/logo.png"
+      url: "/"
+      alt: "Wei Cui"
+      tag: ""
+
   lang:
     license:
       cn: "版权"
