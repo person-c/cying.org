@@ -24,3 +24,7 @@ tibble要取出一个数或者向量真是麻烦，因为它的数据结构tibbl
 根据marker计算几年生存率的 [ROC曲线](https://rpubs.com/IL2/513264)
 
 html.css学习网站 ：https://www.w3school.com.cn/h.asp
+
+英语写作的问题：主要的语法错误就是单复数，事态，the a
+同一个主语写了两句话，后面的可以省略。
+动作是用动词还是短语好？
