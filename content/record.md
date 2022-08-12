@@ -105,3 +105,6 @@ vscode r环境设置：设置了json参数配置，需要重启以后，参数�
 [服务器下下载Anaconda](https://developpaper.com/how-to-install-anaconda-on-a-linux-server-super-detailed/)
 
 [一个简单且老旧的R语言实现Xgboost](https://www.hackerearth.com/practice/machine-learning/machine-learning-algorithms/beginners-tutorial-on-xgboost-parameter-tuning-r/tutorial/)
+
+roc曲线 TPR 分母为real positive（常数），FPR，分母为real false(常数)， 改变阈值加入更多的假阳性的同时，也增加了一部分真阳性的个体。
+
