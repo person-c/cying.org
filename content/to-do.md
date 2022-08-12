@@ -14,7 +14,8 @@ bili:
 w3school:
 html css, javascript
 python机器学习
-mlr3机器学习教程
+[mlr3机器学习教程](https://introduction-to-machine-learning.netlify.app/)
+参考资料：https://mlr-org.com/gallery/2021-03-09-practical-tuning-series-tune-a-support-vector-machine/
 
 
 advanced R
