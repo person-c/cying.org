@@ -103,3 +103,5 @@ vscode r环境设置：设置了json参数配置，需要重启以后，参数�
 [redhat/centos下gcc编译器版本太低无法下载R包的问题](https://shixiangwang.github.io/blog/use-new-gcc-on-centos-for-r/)
 
 [服务器下下载Anaconda](https://developpaper.com/how-to-install-anaconda-on-a-linux-server-super-detailed/)
+
+[一个简单且老旧的R语言实现Xgboost](https://www.hackerearth.com/practice/machine-learning/machine-learning-algorithms/beginners-tutorial-on-xgboost-parameter-tuning-r/tutorial/)
