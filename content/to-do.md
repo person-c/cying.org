@@ -22,4 +22,8 @@ advanced R
 英语写作练习
 [r语言面向对象](https://dataxujing.github.io/R_oop/index.html)
 
+git在vscode 中怎么用？
+gitlen， 可以尝试一下。
+
+原来在vscode中上传过的文件之后加入gitignor以后还是继续上传，怎么解决？
 

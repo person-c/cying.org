@@ -29,6 +29,9 @@ menu:
     - name: "Record|记录"
       url: "/record/"
       weight: 5
+    - name: "To do|摸鱼日记"
+      url: "/to-do/"
+      weight: 6
     
 
   cn:
