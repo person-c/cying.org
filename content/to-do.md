@@ -27,3 +27,5 @@ gitlen， 可以尝试一下。
 
 原来在vscode中上传过的文件之后加入gitignor以后还是继续上传，怎么解决？
 
+r语言的环境问题，namespace真让人头疼
+
