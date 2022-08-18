@@ -2,30 +2,33 @@
 title: to do
 slug: to do
 ---
+# 2022计划（白日做梦）
+##   不得不做的工作上的学习
+#### Math
+[Coursera](https://www.coursera.org/)
+[bilibili](https://www.bilibili.com/)考研数学
 
-coursea 网课：
-统计
-探索性数据分析
-机器学习中的数学
-
-bili:
-考研数学网课
-
-w3school:
-html css, javascript
-python机器学习
-[mlr3机器学习教程](https://introduction-to-machine-learning.netlify.app/)
-参考资料：https://mlr-org.com/gallery/2021-03-09-practical-tuning-series-tune-a-support-vector-machine/
+####  Machine Learning
+[mlr3 Machine Learning](https://introduction-to-machine-learning.netlify.app/) 
 [谷歌机器学习课程](https://developers.google.com/machine-learning/foundational-courses)
 
-advanced R
-英语写作练习
-[r语言面向对象](https://dataxujing.github.io/R_oop/index.html)
+#### Web
+[w3school  HTML,CSS,Javascript](https://www.w3school.com.cn/h.asp)
 
-git在vscode 中怎么用？
-gitlen， 可以尝试一下。
+#### Programming
+[Advanced R](https://adv-r.hadley.nz/)
+[R语言面向对象](https://dataxujing.github.io/R_oop/index.html)
+[Python](https://www.w3school.com.cn/h.asp)
 
-原来在vscode中上传过的文件之后加入gitignor以后还是继续上传，怎么解决？
+#### Reproducible Research
+[Rmarkdown](https://rmarkdown.rstudio.com/)
 
-r语言的环境问题，namespace真让人头疼
+##   学点轻松的吧，家人们
+看一看哲学吧, 虽然完全看不懂：*<逻辑哲学论>*
+看小说放松一下吧：*<蜀山剑侠传>*
+励志成为一个心灵鸡汤大师：*多写几篇英语的文章练习一下吧，掌握一下话语权*。
+享受一下国外人的特权吧：*多听听力啊，兄弟*。
+学习一下怎么装杯吧：*锻炼啊，坚持与努力*。
+
+
 
