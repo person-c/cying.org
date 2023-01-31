@@ -4,6 +4,15 @@ date: 2022-12-06
 slug: cluster-example
 ---
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+
 ## 数据
 
 数据集第一行为未注释到细菌种的占比，考虑到这一数据在样本之间较大的variation，在考虑计算样本注释的相对丰度时，纳入该数据，即每一列之和（考虑未注释到的）为1。当涉及到距离计算的时候，因为未注释到的数据并不代表任一真实的数据，所有在计算距离时剔除该行。
