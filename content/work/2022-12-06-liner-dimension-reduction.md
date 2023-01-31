@@ -4,6 +4,15 @@ date: 2022-12-06
 slug: dimension-reduction
 ---
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+
 线性降维方法主要就是*PCA(principal componet analysis)*以及*SVD(sigular value decomposition)*,以及*PCA*的扩展*MDS(Multtidimensional Scaling)*。*PCA*与*MDS*的差别在于*PCA*考虑的是样本的特征，寻求在低维空间下保留方差较大的特征的信息，所以通过对特征之间的协方差矩阵进行特征值分解矩阵，得到在低维空间下能够保留方差较大特征的正交基，是对特征的线性组合，而*MDS*考虑的是样本之间的相似度矩阵，通过对相似度矩阵矩阵进行特征分解找到在低维空间下能够保留样本最大距离的正交基。
 
 ## PCA
