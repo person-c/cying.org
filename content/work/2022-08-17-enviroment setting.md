@@ -98,12 +98,14 @@ library("languageserver")
 git config --global user.name "myname"
 git config --global user.email  "test@gmail.com"
 ```
+2 为了实现自己账号下本地与远程仓库的同步，先在github建立一个空的仓库，然后使用git克隆到本地即可。
 
 
 
 
-参考：
-[linux下怎么运行R脚本](http://www.cureffi.org/2014/01/15/running-r-batch-mode-linux/)
-[环境变量介绍以及使用](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa)
+
+参考：  
+[linux下怎么运行R脚本](http://www.cureffi.org/2014/01/15/running-r-batch-mode-linux/)  
+[环境变量介绍以及使用](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa)     
 [Linux下怎么设置环境变量](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-environment-variables-in-linux/)
 

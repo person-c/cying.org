@@ -1,5 +1,5 @@
 ---
-title: machine learning math
+title: Machine Learning Math
 date: '2022-07-18'
 slug: machine-learning-math
 ---

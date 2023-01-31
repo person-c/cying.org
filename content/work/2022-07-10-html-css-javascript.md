@@ -1,5 +1,5 @@
 ---
-title: html, css, and javascript
+title: Html, Css, and Javascript
 date: '2022-07-18'
 slug: html-css-javascript
 ---

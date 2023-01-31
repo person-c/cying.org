@@ -6,8 +6,20 @@ slug: tidyverse中的循环与迭代
 categories: []
 tags: [tidyverse]
 ---
-## 导言
-R中的map函数家族以及across函数都可以进行迭代操作。map函数适用于向量，列表，数据框（数据框是列表的特殊形式)多种数据结构，而across函数适用于对数据框进行修改操作。考虑map函数以及across函数对数据框的修改作用上来说，map函数适用于当数据框所有列都要同一函数修改的情况，而across函数当与mutate函数连用时适用于对数据框部分列进行同一函数修改，当与summarize函数连用时，适用于对数据框所有列进行修改或者选取指定列进行统计建模。虽然map函数家族也提供了modify_if函数，但是它的选择器写起来复杂，不如across函数的选择简单强大。
+
+- [函数式编程 -  map函数家族](#函数式编程----map函数家族)
+    - [第一节  单变量map函数](#第一节--单变量map函数)
+    - [第二节  双变量map函数](#第二节--双变量map函数)
+    - [第三节 pmap函数](#第三节-pmap函数)
+    - [第四节 reduce以及accumulate函数](#第四节-reduce以及accumulate函数)
+    - [第五节 walk 函数](#第五节-walk-函数)
+- [across() 函数](#across-函数)
+    - [across函数与mutate, summarize连用](#across函数与mutate-summarize连用)
+    - [across函数与其它dplyr函数连用](#across函数与其它dplyr函数连用)
+- [map函数与across函数的结合](#map函数与across函数的结合)
+
+
+R中的map函数家族以及across函数都可以进行迭代操作。map函数适用于向量，列表，数据框（数据框是列表的特殊形式)多种数据结构，而across函数仅适用于对数据框进行修改操作。考虑map函数以及across函数对数据框的修改作用上来说，map函数适用于当数据框所有列都要同一函数修改的情况，而across函数当与mutate函数连用时适用于对数据框部分列进行同一函数修改，当与summarize函数连用时，适用于对数据框所有列进行修改或者选取指定列进行统计建模。虽然map函数家族也提供了modify_if函数，但是它的选择器写起来复杂，不如across函数的选择简单强大。
 
 mutate函数返回数据框并于原数据框进行并入处理，而summarize函数则是返回生成的新数据框。
 ## 函数式编程 -  map函数家族
@@ -338,6 +350,6 @@ df %>%
 ```
 
 参考：
-[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)
+[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/) 
 [R语言教程](https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/index.html)
 

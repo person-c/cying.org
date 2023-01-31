@@ -1,11 +1,11 @@
 ---
-title: r programming objected oriented programming
+title: R Programming-Objected Oriented Programming
 date: '2022-08-14'
 slug: objected-oriented-programming
 ---
 
-> 一切皆是对象。 
-> 一切皆是函数调用。 
+> 一切皆是对象。   
+> 一切皆是函数调用。    
 以上所谓的对象时指R中所有的数据，包括函数都可以作为对象进行输入，下面所讨论的才是面向对象编程中的对象。
 
 R中有四种面向对象的结构，分别为S3,S4（R语言的前身为S语言）,RC(Reference Class,也称为R5),以及R6。其中前三种为R内置，R6由R6包提供。
@@ -16,15 +16,16 @@ R中有四种面向对象的结构，分别为S3,S4（R语言的前身为S语言
 
 以下所有的内容来自[R语言面向对象编程 教程]( https://dataxujing.github.io/R_oop/)
 
-
 ## 第一篇 基于S3的面向对象
+
 1. S3用起来简单，但在实际的面向对象编程的过程中，当对象关系有一定的复杂度，S3对象所表达的意义就变得不太清楚。
 2. S3封装的内部函数，可以绕过泛型函数的检查，以直接被调用。
 3. S3参数的class属性，可以被任意设置，没有预处理的检。
 4. S3参数，只能通过调用class属性进行函数调用，其他属性则不会被class()函数执行。
 5. S3参数的class属性有多个值时，调用时会被按照程序赋值顺序来调用第一个合法的函数。
 
-##### 第一节  创建S3对象 
+##### 第一节  创建S3对象
+
 ```r
 library(pryr)  #辅助工具，用于检查对象类型
 #通过变量创建S3对象
@@ -53,6 +54,7 @@ otype(x)
 ```
 
 ##### 第二节 泛型函数和方法调用
+
 ```r
 # 用UseMethod()定义teacher泛型函数
 teacher <- function(x,...) UseMethod("teacher")
@@ -78,6 +80,7 @@ teacher.lecture()
 ```
 
 #### 第三节 查看S3对象的函数
+
 ```r
 # 查看teacher对象
 teacher
@@ -101,7 +104,9 @@ getAnywhere(teacher.lecture)
 # 使用getS3method()函数，也同样可以查看不可见的函数
 getS3method("predict","ppr")
 ```
+
 #### 第四节 s3 对象的继承关系
+
 ```r
 node <- function(x) UseMethod("node",x)
 > node.default <- function(x) "Default node"
@@ -126,7 +131,9 @@ node <- function(x) UseMethod("node",x)
 ```
 
 ## 第二篇 基于S4的面向对象
+
 #### 第一节 创建S4对象
+
 ```r
 # 加载pryr包
 library(pryr)
@@ -174,6 +181,7 @@ area(e2)
 ```
 
 #### 第二节 从一个已经实例化的对象中创建新对象
+
 ```r
 setClass("Person",slots=list(name="character",age="numeric"))
 
@@ -187,6 +195,7 @@ n2
 ```
 
 #### 第三节 访问对象属性
+
 ```r
 setClass("Person",slots=list(name="character",age="numeric"))
 a <- new("Person",name="a")
@@ -202,6 +211,7 @@ slot(a,"name")
 ```
 
 #### 第四节 查看S4对象的函数
+
 ```r
 library(pryr)
 # 检查work的类型
@@ -222,7 +232,9 @@ hasMethod("work","Person")
 ```
 
 ## 第三篇 基于RC的面向对象
+
 #### 第一节 创建RC对象
+
 ```r
 # 创建Animal类，包括name属性,构造方法initialize（），叫声方法bark()
 Animal <- setRefClass("Animal",
@@ -266,7 +278,9 @@ cat$bark()
 ```
 
 #### 第二节 RC对象实例化后的内置方法，属性，以及辅助函数
+
 1. 内置方法
+
 - initialize类的初始化函数，用于设置属性的默认值，只有在类定义的方法中使用。
 - callSuper调用父类的同名方法，只能在类定义的方法中使用
 - copy复制实例化对象的所有属性
@@ -282,10 +296,12 @@ cat$bark()
 - usingMethods用于实现方法调用，只能在类定义的方法中使用，这个方法不利于程序的健壮性，所以不建议使用。
 
 2. 内置属性
+
 - self 实例化对象自身
 - .refClassDef类的定义类型
 
 3. 辅助函数
+
 - new用于实例化对象
 - help用于查询类中定义的所有方法
 - methods列出类中定义的所有方法
@@ -298,6 +314,7 @@ cat$bark()
 ## 第四篇 基于R6的面向对象
 
 #### 第一节 创建R6类
+
 ```r
 Person <- R6Class("Person",
                   public = list(
@@ -328,7 +345,9 @@ conan$member()
 ```
 
 #### 第二节 R6的主动绑定
+
 主动绑定(Active binding)是R6中一种特殊的函数调用方式，把对函数的访问表现为对属性的访问，主动绑定属于公有成员。在类的定义中，通过设置activate参数实现主动绑定的功能，给Person类增加两个主动绑定的函数activate和rand
+
 ```r
 Person <- R6Class("Person",
                   public = list(
@@ -350,7 +369,9 @@ conan$active #调用主动绑定的active()函数,结果为num +10 = 100+10
 conan$active <- 20
 conan$num
 ```
+
 #### 第三节 R6的继承关系
+
 ```r
 Person <- R6Class("Person",
                   public = list(
@@ -425,7 +446,11 @@ Worker <- R6Class("Worker",
 u2 <- Worker$new("Conan","Male")
 u2$hello()
 ```
-#### 第四节 R6类对象的静态属性
+
+#### 第四节
+
+R6类对象的静态属性
+
 ```r
 A <- R6Class("A",
              public=list(
@@ -452,6 +477,7 @@ b$a$x
 ```
 
 #### 第五节 R6类的可移植类型
+
 - 可移植类型支持跨R包的继承；不可移植类型，在跨R包的继承的时候，兼容性不太好
 - 可移植类型必须用self和private对象来访问类中的成员，如self$x.private$y。不可移植类型，可以直接使用变量x,y，并通过“<<-”(超赋值)实现赋值。
 
@@ -498,6 +524,7 @@ pr6$getx()
 ## [1] 10
 ```
 #### 第六节 R6的动态绑定
+
 ```r
 A <- R6Class("A",
              public = list(
@@ -521,6 +548,7 @@ s$getx2()
 ```
 
 #### 第七节 R6的打印函数
+
 ```r
 A <- R6Class("A",
              public = list(
@@ -554,6 +582,7 @@ print(a)
 ```
 
 #### 第八节 R6实例化对象的存储
+
 ```r
 # 类中定义的属性和方法统一存储到一个S3对象中
 A <- R6Class("A",
@@ -589,29 +618,3 @@ ls(s)
 # s$aa <- 11 # 增加新变量 Error
 # rm("x",envir=s) # Error
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
