@@ -17,7 +17,7 @@ MathJax.Hub.Config({
 
 ## 第一篇 数据产生以及统计描述
 
-### 第一章描述性统计学探索数据
+### 第一章 描述性统计学探索数据
 
 1. 图形描述
 2. 数字描述 
@@ -38,10 +38,10 @@ MathJax.Hub.Config({
 >
 > 关键：即使一个很小的样本也能产生一个于总体参数相近的估计。
 
-- **抽样方法**：
+- 抽样方法：
 
-1. 不放回的简单随机抽样（a simple random sampling)
-2. 分层的随机抽样(a stratified random sample):相似的为一层，然后,在每一层进行一个简单的随机抽样，然后把这些样本组合起来。
+1. 不放回的简单随机抽样（a simple random sampling)。
+2. 分层的随机抽样(a stratified random sample)：相似的为一层，然后，在每一层进行一个简单的随机抽样，然后把这些样本组合起来。
 
 **Bias and chance error**:
 
@@ -53,13 +53,13 @@ MathJax.Hub.Config({
 - Chance error(sampling error): 随机抽样，估计和总体的偏差，每一次的抽样有不同的chance error。抽样的随机性。
 
 $$ 
-estimate = parameter + bias(systematic error) + chance 
-error(sampling error) 
+estimate = parameter + bias(systematic\ error) + chance\ error(sampling\ error)
 $$
 
 Note: 增大样本可以减少chance error，并且我们可以计算chance error具体有多大。但是增大样本只是让bias在一个更大的规模上重复，并且我们不能知道bias的大小。
 
-**因果分析与关联分析**
+**因果分析与关联分析**  
+
 observation study: 测量一个感兴趣的事的结果，用于观察关联关系。
 
 Association is not causation, there may be confounding factors
@@ -82,12 +82,10 @@ Three histograms:
 2. The histogram of 100 observed tosses.
 3. The probability of the statistic.
 
-
 Law of large numbers:
-When sample size is large enough, the $\bar{x_N}$ will be likely close to $\mu$ . (applied for averages and percentages,but not for sums for sampling with replacement from a population or for simulating data from a probability histogram)
+When sample size is large enough, the $\bar{x}_N$ will be likely close to $\mu$ . 1) applied for averages and percentages, but not for sums. 2) sampling with replacement from a population or for simulating data from a probability histogram.
 
 More advanced large number laws: the empirical histaogram will be close to probability to histogram producing the data.
-
 
 Central limit theory: the sample sum statistic(averages and percentages are sums in disguise) distribution is normal distribution
 
@@ -103,7 +101,7 @@ Subjective probability: not based on experiments, different people assign differ
 > Complement rule: P(A does not occur) = 1 - P(A)
 
 > Rules for equally likely outcomes: P(A) = $ \frac{
- number of outcomes in A}{n}$
+ number\ of\ outcomes\ in\ A}{n}$
 
 > Addition rule: A and B are mutually exclusive(don't occure at the same time), then:
       $$ P(A or B) = P(A) + P(B)$$
@@ -122,15 +120,16 @@ $$ P(B|A) = \frac{P(A and B)}{P(A)} $$
 **False positives case**
 **warner's randomized response model**
 
-### 正态分布与二项分布
-Normal curve: bell-shaped.
-Empirical rule:
+### 第三章 正态分布与二项分布
+
+Normal curve: bell-shaped.  
+Empirical rule:  
 About 2/3(68%) fall within one sd of the mean.  
 About 95% fall within 2 sd of the mean.  
 About 99.7 fall within 3 sd of the mean.  
 
 Standardize data:
- $ z = \frac{height - \bar{x}}{s}$
+ $ z = \frac{height - \bar{x}}{s}$  
 z meas how many sd the height away from the mean. no unites.
 
 Normal approximation: 
@@ -140,14 +139,14 @@ normal curve, the height is z sd away from mean.
 
 **Binomial probability**
 $$
-\frac{X(success count) - np}{\sqrt{np(1 - p)}} \sim
+\frac{X(success\ count) - np}{\sqrt{np(1 - p)}} \sim
 N(0,1)
 $$
 
 Note: 简单随机抽样是不放回的抽样，不是二项分布设定，因为每取出一个, 概率P就，改变了；但是如果总体size远大于样本size，那么放回抽样和不放回抽样就是大致一致的，服从于二项分布，服从于正态曲线。
 
 
-### 第三章 样本分布
+### 第四章 样本分布
 
 Expected value of the sample average , E( $\bar{x}_N $) is the population average.
 Standard error: statistic's sd(其实就是样本统计量的标准差), tells us roughly how far off the statistic will be from it expected value.
@@ -157,7 +156,7 @@ Standard error: statistic's sd(其实就是样本统计量的标准差), tells u
 
 > 1. More lager sample size n, more smaller SE, it can
 be used to determine sample size to get desired accuarcy
-> 2. SE don't depend on the size of the population,only on the size of the sample.
+> 2. SE don't depend on the size of the population, only on the size of the sample.
 
 **Expected value and *SE* for sum**
 > $ E(S_n) = n\mu $ , $SE(S_n) = \sqrt{n}\sigma $
@@ -165,7 +164,7 @@ be used to determine sample size to get desired accuarcy
 **Expected value and *SE* for percentages**
 Framework for counting and classifying:
 $$
-E(percentage of 1s) = 1\mu100%  SE(percentage of 1s) =
+E(percentage\ of\ 1s) = 1\mu100%
  \frac{\sigma}{\sqrt{n}} 100%
 $$
 
@@ -178,12 +177,12 @@ $ \mu = \sum_{i=1}^k x_i P(X = x_i),  \sigma^2 =
 ## 第三篇 一叶知秋——如何预知未来
 ### 第一章 线性回归
 
-Scatter plot three element: direction(slope up or down),form(points cluster around a line or other), strength(how closethe points follow the form)
+Scatter plot three element: direction(slope up or down), form(points cluster around a line or other), strength(how closethe points follow the form)
 
-Summary of pair date: $\bar{x}$, $s_x$, $\bar{y}$, $s_y$, $r$
+Summary of pair data: $\bar{x}$, $s_x$, $\bar{y}$, $s_y$, $r$
 
 How to quantify the strength?  
-If it is liner former, the correlation coefficient *r* is a good choice. standardized x*y ,not affected by the scale of  either variable. its sign gives the direction and its absolute value gives the strength. 
+If it is liner former, the correlation coefficient *r* is a good choice. standardized $x*y$ ,not affected by the scale of  either variable. its sign gives the direction and its absolute value gives the strength. 
 
 Note: r is only useful for measuring linear association.and correlation does not mean causation
 
@@ -191,17 +190,17 @@ How to get the regression line?
 To minimize the MSE(mean squared error), the method of least squares gives the analytic answer: $b = r\frac{s_y}{s_x}$ and $a = \bar{y} - b\bar{x}$. This line $y = a + bx$ is called the regression line.
 
 Another interpretation of the regression line:   
-> Computes the average value of y when the first coordinate is near x
+> Computes the average value of y when the first coordinate is near x.  
 Note: The average often times is the best estimate when no  extra information is provided.
 
 向均值回归？regression effect(回归效应)?  
-因为 1）$\bar{x}$ 的预测值是 $\bar{y}$，  2）$b = r\frac{s_y}{s_x}$ ，也就是说当x 偏离 $\bar{x}$ 一个sd是， y只向 $\bar{y}$ 偏离 r*sd 个单位，也就是y is fewer sd away from $\bar{y}$ than x is from $\bar{x}$
+因为 1）$\bar{x}$ 的预测值是 $\bar{y}$，  2）$b = r\frac{s_y}{s_x}$ ，也就是说当$x$偏离 $\bar{x}$ 一个sd时， $y$只向 $\bar{y}$ 偏离 $r*sd$ 个单位，也就是$y$ is fewer sd away from $\bar{y}$ than $x$ is from $\bar{x}$.  
 i.e. Football shaped scatter, exam scores. my becaused by regression fallacy.
 
-Note: x to y and y to x are two different regression line, cannot predict each other.
+Note: $x$ to $y$ and $y$ to $x$ are two different regression line, cannot predict each other.
 
 回归中的正态估计？  
-在回归线（football shape scatter)中的某一点x处，y服从于正态分布
+在回归线（football shape scatter)中的某一点$x$处，$y$服从于正态分布
 即： $\frac{Y - y(predict)|x}{\sqrt{1 - r^2}s_y}$
 
 
@@ -216,13 +215,12 @@ variable transformation, and it may result in a non-liner scatter
 , which require a second transformation in of x to fix)
 
 离群值 outliers？  
-离x 均值很远的x可能会对回归线的构建有很大的影响（influential point）,会使得回归线向它偏离，无法用残差图检验。
-
+离$x$均值很远的$x$可能会对回归线的构建有很大的影响（influential point）,会使得回归线向它偏离，无法用残差图检验。
 
 一些问题：
-- 预测y时，x应该在其范围之中，超出x的取值范围以后可能就不是线性关系。  
+- 预测$y$时，$x$应该在其范围之中，超出$x$的取值范围以后可能就不是线性关系。  
 - 对总结数据注意，比如平均值，它们的变化更小，相关性？  
-R^2,可以被回归线解释的部分，1 - r^2就是不能解释的，就是残差。   
+$R^2$,可以被回归线解释的部分，$1 - r^2$就是不能解释的，就是残差。
 
 ## 第四篇 我们距离真相还有多远——置信区间和假设检验
 ### 第一章 Confidence interval 
@@ -256,7 +254,7 @@ p value is the probability of getting a value of z as extreme or more extreme th
 
 Note:Ho 是否正确是 一个确定的事，p值只是给出了在H0为真的假设下,观察到如此极端值得概率大小。
 
-实际上当我们进行z检验时，我们用观测统计量 - 期望统计量，然后除以统计量的SE，计算出观测统计量在零假设的情况下偏离期望值多少个*sd*。实际上样本的统计量的SE需要用总体方差进行计算，在sample size > 20,的情况下可以直接用样本*sd*代替总体*sd*，进行近似求解sample SE。如果sample  size < 20，用样本*sd*代替总体sd计算那么其服从于t(n-1), 置信区间：$\bar{x} +/- t_{n-1}SE$
+实际上当我们进行z检验时，我们用观测统计量 - 期望统计量，然后除以统计量的SE，计算出观测统计量在零假设的情况下偏离期望值多少个*sd*。实际上样本的统计量的SE需要用总体方差进行计算，在sample size > 20的情况下可以直接用样本*sd*代替总体*sd*，进行近似求解sample SE。如果sample  size < 20，用样本*sd*代替总体sd计算那么其服从于t(n-1), 置信区间：$\bar{x} +/- t_{n-1}SE$
 
 其他：
 1. 统计学上的显著不能说明效应大小很重要，因为大的样本数目可以减少SE,使得样本统计量的分布更加集中，那么只要一个很小的偏离就可以具有统计学上的显著。  
@@ -266,21 +264,20 @@ Note:Ho 是否正确是 一个确定的事，p值只是给出了在H0为真的�
 ### 第三章 假设检验之z检验以及t检验
 Two sample z-test 
 $$
-z = \frac{observed difference - expected difference}{SE of difference} = \frac{(\hat{p}_2 - \hat{p}_1) - (p_2 - p_1)}{SE of difference}
+z = \frac{observed\ difference - expected\ difference}{SE\ of\ difference} = \frac{(\hat{p}_2 - \hat{p}_1) - (p_2 - p_1)}{SE\ of\ difference}
 $$
 If the two sample are independent:
 $$
-SE(\bar{x_2} - \bar{x_1}) = \sqrt{(SE(\bar{x_1}))^2 + (SE(\bar{x_2}))^2 }
+SE(\bar{x}_2 - \bar{x}_1) = \sqrt{(SE(\bar{x}_1))^2 + (SE(\bar{x}_2))^2 }
 $$
 
-and $SE(\bar{x_1}) = \frac{\sigma_1}{\sqrt{n_1}}$ is estimated by $\frac{s_1}{\sqrt{n_1}}$
-if sample size n1, n2 are not large, then the p-value neeed to 
-computed from the t-distribution.
+and $SE(\bar{x}_1) = \frac{\sigma_1}{\sqrt{n_1}}$ is estimated by $\frac{s_1}{\sqrt{n_1}}$
+if sample size n1, n2 are not large, then the p-value neeed to computed from the t-distribution.
 
 if assuming $\sigma_1 = \sigma_2$,then pooled estimate for 
 $\sigma_1 = \sigma_2$ ,given by
 $$
-s_pooled^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}
+s_{pooled}^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}
 $$
 
 Paired-difference test
@@ -296,13 +293,13 @@ $SE(\bar{d}) = \frac{\sigma_d}{\sqrt{n}}$, estimate $\sigma_d$ by $s_d$
 **Testing of goodness-of-fit**:研究一个分类变量的分布和已知分布是否一致。
 H0: the color distribution is given by that table
 $$
-\chi^2_{n-1} = \sum_{all categories} \frac{(observed - expected)^2}{expected}
+\chi^2_{n-1} = \sum_{all\ categories} \frac{(observed - expected)^2}{expected}
 $$
 期望值来自于已知分布
 
-**Testing homogeneity**：$\chi^2 -test of homogeneity$  tests that the distribution of a categorical variable(color) is the same for serval populations(milk, peanut,caramel);检验一个分类变量在不同的总体中的分布是否一致。
+**Testing homogeneity**：$\chi^2 -test\ of \ homogeneity$  tests that the distribution of a categorical variable(color) is the same for serval populations(milk, peanut,caramel);检验一个分类变量在不同的总体中的分布是否一致。
 $$ 
-\chi^2 (no. of columns -1 )(no. of rows - 1) = \sum_{all cells} \frac{(observed - expected)^2}{expected}
+\chi^2 (no.\ of\ columns -1 )(no.\ of\ rows - 1) = \sum_{all\ cells} \frac{(observed - expected)^2}{expected}
 $$
 期望值来自于把不同总体合并为一个总体，计算该分类变量在所有总体中概率分布。
 
@@ -318,7 +315,7 @@ k groups and the $j$th group has $n_j$ observations:
 There are total $N = n_1 + ... + n_k$ observations.
 Sample meen of *j*th group :
 
-$\bar{y_j} = \frac{1}{n_j}\sum_{i=1}^{n_j}y_ij$
+$\bar{y_j} = \frac{1}{n_j}\sum_{i=1}^{n_j}y_{ij}$
 
 Overall sampeld mean:
 
@@ -358,8 +355,9 @@ the ANOVA table:
 
 The one-way ANOVA model:
 $$
-y_{ij} = \mu_j + \epsilon_{ij} (\mu_j: mean of *j*th group, \epsilon_{ij} \sim N(0, \sigma^2))
+y_{ij} = \mu_j + \epsilon_{ij} (\mu_j: mean\ of\ jth\  group, \epsilon_{ij} \sim N(0, \sigma^2))
 $$
+
 so the null hypothesis:
 $$
 \mu_1 = \mu_2 = ...\mu_k
@@ -378,7 +376,7 @@ $$
 
 estimate overall mean $\mu$ by the 'grand mean' $\bar{y}$, then the estimate of $\tau_j = \mu_j - \bar{y}$. the estimate of $\epsilon$ is the residual $y_{ij} - y_j$
 
-corresonding to the model $y_{ij} = \mu + \tau + \epsilon_ij$ wecan write $y_ij$ as the sum of the corresponding estimates:
+corresonding to the model $y_{ij} = \mu + \tau + \epsilon_ij$ wecan write $y_{ij}$ as the sum of the corresponding estimates:
 $$
 y_{ij} = \bar{y} + (\bar{y_j} - \bar{y}) + (y_{ij} - \bar{y_{j}})
 $$
@@ -418,8 +416,8 @@ Bonferroni correction: If there are m tests, multiply the p-values by m
 
 False Discovery Proportion (FDP):
 $$
-FDP = \frac{number of false discoveries}
-{total number of discoveries}
+FDP = \frac{number\ of\ false\ discoveries}
+{total\ number\ of\ discoveries}
 $$
 where a ‘discovery’ occurs when a test rejects the null hypothesis.
 

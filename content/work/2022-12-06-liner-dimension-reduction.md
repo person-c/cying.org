@@ -44,14 +44,12 @@ B = -\frac{1}{2}CD^{2}C
 $$
 其中$C = I - \frac{1}{n}J_n$
 
-- *The iterative method*
+- *The iterative method*  
   该方法更加实用，可以用于非欧式距离矩阵。
 
 $$
 Stress_D(x_1, x_2, ..., x_N) = \left(\sum_{i\neq j\neq 1, ..., N} \left(d_{ij} - ||x_i - x_j|| \right)^2 \right)^{\frac{1}{2}}
-$$(
-
-
+$$
 
 ## 后记
 
@@ -160,11 +158,3 @@ $$
 第一个变换$V^{T}$将单位正交向量$v_1, v_2$转到水平和垂直方向、$\Sigma$相当于对$v_1, v_2$进行放缩、$U$将放缩后的向量旋转到最后的位置。
 
 #### 基变换以及空间变换的统一
-
-
-参考：
-[矩阵分析参考一](https://www.zhihu.com/collection/789745286)
-[矩阵分析参考二](https://www.zhihu.com/collection/789745286)
-[PCoA的参考](https://towardsdatascience.com/principal-coordinates-analysis-cc9a572ce6c)
-
-

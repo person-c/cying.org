@@ -16,10 +16,6 @@ MathJax.Hub.Config({
 });
 </script>
 
-```{r}
-library(ggplot2)
-```
-
 # 离散分布
 
 **二项分布(Binomial Distribution)**：
@@ -28,7 +24,7 @@ library(ggplot2)
 > 记为：$ X \sim b(n,p) $
 > $ E(X) = np $ , $ D(X) = np(1-p) $
 
-> 二项分布的特殊分布 **两点分布（Bernoulli Distribution** ，即一重伯努利实验：
+> 二项分布的特殊分布 **两点分布Bernoulli Distribution** ，即一重伯努利实验：
 
 **负二项分布(Negative Binomial Distribution)**：
 > 多重伯努利实验中，已知事件 $ A $ 发生的概率为 $ p $，那么当事件 $A$ 第 $r $ 次发生，那么随机变量 $X$ —— 伯努利实验次数：
@@ -44,7 +40,7 @@ library(ggplot2)
 > 记为：$ X \sim h(n,N,M) $
 > $ E(X) = n\frac{M}{N} $, $ D(X) = \frac{nM(N-M)(N-n)}{N^2(N-1)} $
 
-**泊松分布(Possion Distribution)**：涉及到单位时间，面积，体积的计数过程，数量X:
+**泊松分布(Possion Distribution)**：涉及到单位时间，面积，体积的计数过程，数量$X$:
 > $$ P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}  $$ 
 > 记为：$ X \sim  P(\lambda) $
 > $E(X) = \lambda), D(X) = \lambda $
@@ -56,37 +52,28 @@ library(ggplot2)
 > 记为：$X \sim N(\mu,\sigma)$
 > $E(X) = \mu$, $D(X) = \sigma^2$
 
-```{r}
-base <-
-  ggplot() +
-  xlim(-4, 4)
-base +
-  stat_function(aes(colour = "\u03B1 = 0, \u03C3= 1"), fun = dnorm,
-                args = list(mean = 0, sd = 1))
-```
-
 > 概率密度函数：
 > $$ p(x) = \frac{1}{\sqrt{2 \pi}\sigma} e^{- \frac{(x - \mu)^2}   {2\sigma^2}} $$
 > 分布函数：
 > $$ F(x) = \int_{-\infty}^x p(t)dt = \int_{-\infty}^x \frac{1}{\sqrt{2\pi}\sigma} e^{- \frac{(t-\mu^2)}{2\sigma}}dt $$
 
 **均匀分布**
-> 记为：$X \sim U(a,b)$       
-> $E(X) = \frac{a+b}{2}$，$D(X) = \frac{(b-a)^2}{12}$
-> 概率密度函数：
+> 记为：$X \sim U(a,b)$
+> $E(X) = \frac{a+b}{2}$，$D(X) = \frac{(b-a)^2}{12}$  
+> 概率密度函数：  
 > 分布函数：
 
  **指数分布**
 > 记为：$X \sim Exp(\lambda)$
-> $E(X) = \frac{1}{\lambda}$，$D(x) = \frac{1}{\lambda^2}$
-> 概率密度函数：
+> $E(X) = \frac{1}{\lambda}$，$D(x) = \frac{1}{\lambda^2}$  
+> 概率密度函数：  
 > 分布函数：
 
 **伽玛分布**
 > 记为：$X \sim Ga(\alpha,\lambda)$
-> $E(X) = \frac{\alpha}{\lambda}$， $D(X) = \frac{\alpha}{\lambda^2}$
-> 概率密度函数：
-> 分布函数
+> $E(X) = \frac{\alpha}{\lambda}$， $D(X) = \frac{\alpha}{\lambda^2}$  
+> 概率密度函数：  
+> 分布函数：
 
 **贝塔分布**
 > 记为：$X \sim Be(a,b)$

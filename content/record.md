@@ -2,6 +2,7 @@
 title: "Record|记录"
 slug: record
 ---
+## 2022
 
 因为平时工作，经常遇到许多问题，所以创立一个临时记录文件，每次工作遇到的问题都记录在这里，隔一段时间再整理发布。
 
@@ -207,3 +208,5 @@ ggplot2画图步骤：、
 考虑主题。
 
 编程语言都可以调用系统内置的命令？[r通过`system`函数](https://www.r-bloggers.com/2021/09/how-to-use-system-commands-in-your-r-script-or-package/)，python通过os模块？这个东西叫接口吗，是否还可以调用其它任何语言或者软件的借口？
+
+## 2023
