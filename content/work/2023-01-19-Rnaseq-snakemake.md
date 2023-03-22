@@ -14,14 +14,14 @@ snakemake脱胎于python，所以继承了python的语法。
 
 ```yaml
 samples:
-    SRR12207279: data/SRR12207279.sralite
-    SRR12207280: data/SRR12207280.sralite
-    SRR12207283: data/SRR12207283.sralite
-    SRR12207284: data/SRR12207284.sralite
+    SRR12207279: sample-data/SRR12207279.sralite
+    SRR12207280: sample-data/SRR12207280.sralite
+    SRR12207283: sample-data/SRR12207283.sralite
+    SRR12207284: sample-data/SRR12207284.sralite
     
-genome: /its1/GB_BT1/cuiwei/database/mouse/mm10/mm10/genome   
+genome: ref-data/genome   
 
-gtf: /its1/GB_BT1/cuiwei/database/mouse/mm10/mm10.refGene.gtf.gz
+gtf: ref-adata/mm10.refGene.gtf.gz
 ```
 
 - 读入配置文件
@@ -37,12 +37,13 @@ configfile: "config.yaml"
 ```python
 rule all:
     input:
-        "result/counts/counts.txt"
+        "result/counts/counts.txt",
+        "result/report/report.pdf"
 ```
 
 - 将sra数据格式转换为fastq格式
 
-涉及到将yaml配置文件中的samples用rep通配符指代，以及通过定义函数推迟通配符的识别。
+涉及到将yaml配置文件中的samples用rep通配符指代，以及通过定义函数推迟通配符的识别，和通过定义字符串实现复杂shell命令（多引号）。注意变量名称的大小写。
 
 ```python
 def get_input_sra(wildcards):
@@ -55,7 +56,7 @@ rule extract:
         "result/raw/fq/{rep}_1.fastq",
         "result/raw/fq/{rep}_2.fastq"
     shell:
-        "fasterq-dump {input} -3 -e 12 -O ./result/raw/fq/"
+        "fasterq-dump {input} -3 -e 12 -O result/raw/fq/"
 ```
 
 - fastq文件压缩
@@ -83,7 +84,7 @@ rule cutadapt:
         "result/clean/fq/{rep}_1_val_1.fq.gz",
         "result/clean/fq/{rep}_2_val_2.fq.gz"
     shell:
-        "trim_galore {input}  -o ./result/clean/fq/ \
+        "trim_galore {input}  -o result/clean/fq/ \
         -j 4 -q 25 --phred33 --length 55 --stringency 3 --paired --gzip"
 ```
 
@@ -98,7 +99,7 @@ rule qc:
         "result/clean/qc/{rep}_1_val_1_fastqc.html",
         "result/clean/qc/{rep}_2_val_2_fastqc.html"
     shell:
-        "fastqc {input} -t 12 -o ./result/clean/qc/"
+        "fastqc {input} -t 12 -o result/clean/qc/"
 ```
 
 - 序列比对
@@ -154,5 +155,22 @@ rule count:
         "featureCounts {input.bam}  -a {params.gtf} \
         -o ./result/counts/counts.txt \
         -T 12  -p"
-``` 
+```
 
+```python
+rule Rmarkdown_report:
+    output:
+      "result/report/report.pdf"
+    shell:
+        """
+        Rscript -e "rmarkdown::render('RNASeq-downstream-visualization.Rmd')"
+        """
+```
+
+Note: 这个流程并没有实际跑过，只用snakemake预先检查过没有问题，因为没有足够大的服务器环境，暂时还没测试。
+
+参考：
+
+[RNA-seq入门实战](https://cloud.tencent.com/developer/article/2032040?areaSource=&traceId=)
+[snakemake中复杂shell命令](https://carpentries.org/community-lessons/)  
+[snakemake基础以及进阶](https://felicia-yjzhang.gitbooks.io/bioinfo-training/content/snakemakeshi-yong.html)  

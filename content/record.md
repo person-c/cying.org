@@ -210,3 +210,28 @@ ggplot2画图步骤：、
 编程语言都可以调用系统内置的命令？[r通过`system`函数](https://www.r-bloggers.com/2021/09/how-to-use-system-commands-in-your-r-script-or-package/)，python通过os模块？这个东西叫接口吗，是否还可以调用其它任何语言或者软件的借口？
 
 ## 2023
+
+看到一篇防火墙的文章，感觉可以后面看看
+
+snakemake复杂shell命令-多引号的写法[https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/13-quoting/index.html]，这里好像有很多生物信息的教程。
+
+关于字符检测，字符重复次数（I ,II 的检测）。
+
+关于linux中ssh登录时，各个配置文件的执行顺序[https://www.cnblogs.com/bigben0123/p/3184115.html]。.bash_profile, .bash_login, .bashrc.
+
+登服务器登了半天，.profile就是不执行，最后才发现时vscode的问题。
+
+如何在实现在R中写其它类型的数据文件例如，yaml，json，python中的字典
+等。
+
+
+regex!!regex[https://stackoverflow.com/questions/9704213/remove-part-of-a-string]
+
+匹配括号的开始和结束，在R中字符的转义用的是两个//[https://stackoverflow.com/questions/53502680/r-regex-to-match-pattern-in-square-brackets-with-exception]
+
+
+R处理中文的表格的问题。。。。
+
+工具人天天下数据，该学下[爬虫了](https://cosx.org/2017/08/web-scrap-tools/)
+
+[rmarkdown html表格](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html）
