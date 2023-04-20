@@ -235,3 +235,6 @@ R处理中文的表格的问题。。。。
 工具人天天下数据，该学下[爬虫了](https://cosx.org/2017/08/web-scrap-tools/)
 
 [rmarkdown html表格](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html）
+
+
+[log打印日志，向规范化前进](https://cran.r-project.org/web/packages/ParallelLogger/vignettes/Logging.pdf)

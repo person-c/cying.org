@@ -16,22 +16,22 @@ menu:
   main:
     - name: "About"
       url: "/en/about/"
-      weight: 1
+      weight: 3
     - name: "Blog"
       url: "/en/"
-      weight: 2
+      weight: 4
     - name: "关于"
       url: "/cn/about/"
-      weight: 3
+      weight: 5
     - name: "日志"
       url: "/cn/"
-      weight: 4
-    - name: "Record|记录"
-      url: "/record/"
       weight: 5
-    - name: "To do|摸鱼日记"
+    - name: "ItemList"
+      url: "/record/"
+      weight: 2
+    - name: "To do"
       url: "/to-do/"
-      weight: 6
+      weight: 1
     
 
   cn:
@@ -81,7 +81,7 @@ menu:
       
 params:
   description: "Wei Cui|崔伟"
-  footer: "&copy; [Wei Cui](/) 2022 - {Year}"
+  footer: "&copy; 2022 - {Year}"
   
   customJS:
     - "fix-toc.js"
@@ -109,7 +109,7 @@ params:
     en:
       img: "/images/logo.jpg"
       url: "/"
-      alt: "Wei Cui"
+      alt: "live"
       tag: ""
 
   lang:

@@ -4,6 +4,11 @@ date: 2023-01-12
 slug: use-r-script-in-linux
 ---
 
+- [argparse](#argparse)
+- [`read_yaml`](#read_yaml)
+- [parallel](#parallel)
+
+
 编写R软件。首先在脚本头部加入语句`#! /usr/bin/env Rscript`指定bash。
 
 #### argparse

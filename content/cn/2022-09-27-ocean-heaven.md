@@ -1,6 +1,5 @@
 ---
 title: 海洋天堂
-author: ''
 date: '2022-09-27'
 slug: ocean-heaven
 ---

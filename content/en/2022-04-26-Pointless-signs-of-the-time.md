@@ -4,7 +4,7 @@ date: '2022-06-18'
 slug: Pointless signs of the time
 ---
 
-The graduation ceremony is not mine because I graduated last year in 2021 and came to Chongqing Medical University (CQMU) to pursue my master's degree. Something came to my mind just a few days ago when the local students at CQMU graduated. 
+The graduation ceremony is not mine because I graduated last year in 2021 and came to this University to pursue my master's degree. Something came to my mind just a few days ago when the local students at the university graduated.
 
 As predicted, the majority of them exuded youth—that's what I'm trying to convey. Almost every girl in China would dress up as JK or Lolita and film or photograph herself. That made me feel a marvelous gap between reality and fiction. These recent events have reminded me that these JK uniforms were initially developed for Japanese high school ladies, but they have now made an appearance among undergraduate graduates, all of whom are around 22 years old.
 
@@ -13,16 +13,3 @@ My high school instructor once told us that the elderly are eager to stay with t
 As time passes, I notice these changes in myself. I've appeared to become indifferent, lethargic, and unwilling to try new things. How quickly things can change!
 
 Note: I'm not here to pass judgment on these young ladies' attire; that's not my goal. I agree with the viewpoint that everyone has the freedom to wear whatever they choose. They're just a few of my pointless signs of the passage of time.
-
-
-
-
-
-
-
-
-
-
-
-
-

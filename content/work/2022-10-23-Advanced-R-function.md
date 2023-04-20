@@ -4,6 +4,17 @@ date: '2022-10-23'
 slug: advanced-r-functions
 ---
 
+- [Functionals](#functionals)
+    - [`map` family](#map-family)
+    - [Reduce family](#reduce-family)
+    - [Predicate functionals](#predicate-functionals)
+    - [Base functions](#base-functions)
+- [Function factories](#function-factories)
+    - [Basics](#basics)
+    - [Case study](#case-study)
+- [Fuction operators](#fuction-operators)
+    - [Case study](#case-study-1)
+
 关于函数式编程语言，其一，需要有一类函数，也就是函数也是一个数据对象。其二，函数得是pure的。
 
 A pure function satisfies two property:
