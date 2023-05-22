@@ -1,27 +1,27 @@
 ---
-title: Advanced-R-meta-programming
+title: adr-meta programming
 date: 2023-01-10
-slug: meta-programming
+slug: 2023-01-10-adr-meta-programming
 ---
 
 - [序](#序)
 - [Expression](#expression)
-    - [Abstract syntax trees](#abstract-syntax-trees)
-    - [Expressionsion construction](#expressionsion-construction)
-    - [parser and grammer](#parser-and-grammer)
-    - [Specialised data structures](#specialised-data-structures)
+  - [Abstract syntax trees](#abstract-syntax-trees)
+  - [Expressionsion construction](#expressionsion-construction)
+  - [parser and grammer](#parser-and-grammer)
+  - [Specialised data structures](#specialised-data-structures)
 - [Quasiquotation](#quasiquotation)
-    - [quote](#quote)
-    - [unquote](#unquote)
-    - [Non-quoting](#non-quoting)
-    - [`...`(dot-dot-dot)](#dot-dot-dot)
-    - [case](#case)
+  - [quote](#quote)
+  - [unquote](#unquote)
+  - [Non-quoting](#non-quoting)
+  - [`...`(dot-dot-dot)](#dot-dot-dot)
+  - [case](#case)
 - [Evaluation](#evaluation)
-    - [Basics](#basics)
-    - [Quosures](#quosures)
-    - [data mask](#data-mask)
-    - [using tidy evaluation](#using-tidy-evaluation)
-    - [base evaluation](#base-evaluation)
+  - [Basics](#basics)
+  - [Quosures](#quosures)
+  - [data mask](#data-mask)
+  - [using tidy evaluation](#using-tidy-evaluation)
+  - [base evaluation](#base-evaluation)
 
 ## 序
 
@@ -500,7 +500,6 @@ r$> bquote(-.(xyz) / 2)
 
 - Quoting if evaluation fails.
 
-
 #### `...`(dot-dot-dot)
 
 上面提到“解引用”时，符号`!!!`在返回表达式的函数中意义是将列表切割插入表达式中，实际上不仅返回表达式的函数支持该语法，函数`list2()`中也支持该语法，并且在其中支持表达式作为变量名。
@@ -623,7 +622,7 @@ r$> eval(expr(x + 1), env(x = 1000))
 几个例子：
 
 - `local()`。用于将会生成无用的占用内存比较大的计算。其原理就是简单的把代码转换为表达式，然后在临时环境中执行。就像函数执行一样，执行完以后，这个环境就不在了。
- 
+
 ```r
 local2 <- function(expr) {
   env <- env(caller_env()) # 新环境以调用环境作为父环境，就可以获取调用环境的变量
@@ -885,6 +884,4 @@ resample_lm2(y ~ x, data = df)
 #>        4.42         3.11
 ```
 
-
 总结：整个章节涉及两个方面的内容，一个是如何创建对参数进行引用的函数(NSE函数），另一个问题是如何对NSE函数进行封装。第一个问题：为了实现用户提供的代码（参数值）与开发者在函数内部提供的代码进行组合，对于返回表达式的函数，设计引进了插入符号`!!`用于实现代码的组合。进一步地，考虑到执行表达式时，表达式与环境的密切关系，引入了`quosure`数据结构即所谓的quosure表达式，以及其配对的`eval_tidy`函数。为了解决在使用*data mask*时歧义的问题，对于`eval_tidy`函数又引入了对表达式前缀的识别的语法。第二个问题：对于tidy-evaluation函数的封装有多种形式，一般情况下使用简写`{{}}`符号就可以。对于*Base R*的*NSE*函数则需要捕获整个表达式以及调用环境，然后执行。
-

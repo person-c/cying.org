@@ -1,7 +1,7 @@
 ---
-title: 使用Rmarkdonw生成中文PDF
+title: rmd to pdf in Chinese
 date: 2023-01-12
-slug: convert-rmarkdown-to-chinese-pdf
+slug: 2023-01-12-rmd-to-pdf-in-chinese
 ---
 
 为了使得Rmardown生成的PDF支持中文以及交叉引用等功能，在YAML头部需要做一些设置。pdf_documnent2格式是对普通pdf格式的增强，增加了交叉引用的支持。你可以通过`?pdf_document2`查看该文档可以设置的选项。xelatex是对中文支持比较好的引擎。如下：
@@ -107,7 +107,6 @@ tinytex::install_tinytex()
 knitr只负责将.Rmd文件转换为.md文件，其它文件的转换需要依赖于Pandoc，因此你还需要下载Pandoc软件。如果你是在Rstudio中使用Rmarkdown，你不需要考虑Pandoc的问题，因为Pandoc是随Rstudio一起下载的。如果你是使用其它的代码编辑器比如VS code，你需要确保Pandoc在搜索路径中，使得`render`函数能够找到Pandoc。
 
 实际上因为`render()`函数调用的软件Pandoc，你可以任意文档进行转换，不仅仅局限于.Rmd文件。
-
 
 参考：  
 [Rmarkdown definitive guide](https://bookdown.org/yihui/bookdown/tables.html)  

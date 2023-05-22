@@ -1,31 +1,30 @@
 ---
-title: Advanced R-Foundation
+title: adr-Foundation
 author: ''
 date: '2022-06-22'
-slug: Advanced R
+slug: 2022-06-25-adr-foundation
 categories: []
 tags: [R]
 ---
 - [Names and values](#names-and-values)
 - [Vectors](#vectors)
-    - [Atomic](#atomic)
-    - [List](#list)
-    - [Null](#null)
+  - [Atomic](#atomic)
+  - [List](#list)
+  - [Null](#null)
 - [Subset](#subset)
 - [Control flow](#control-flow)
 - [Functions](#functions)
-    - [Function fundamentals](#function-fundamentals)
-    - [函数执行机制](#函数执行机制)
+  - [Function fundamentals](#function-fundamentals)
+  - [函数执行机制](#函数执行机制)
 - [Environment](#environment)
-    - [Environment basics](#environment-basics)
-    - [Special environments](#special-environments)
-    - [Environment as a data structure](#environment-as-a-data-structure)
-    - [Condition system](#condition-system)
-        - [Signalling conditions](#signalling-conditions)
-      - [Ignoring conditions](#ignoring-conditions)
-      - [Handling conditions](#handling-conditions)
-      - [Custom condition object](#custom-condition-object)
-
+  - [Environment basics](#environment-basics)
+  - [Special environments](#special-environments)
+  - [Environment as a data structure](#environment-as-a-data-structure)
+  - [Condition system](#condition-system)
+    - [Signalling conditions](#signalling-conditions)
+    - [Ignoring conditions](#ignoring-conditions)
+    - [Handling conditions](#handling-conditions)
+    - [Custom condition object](#custom-condition-object)
 
 ## Names and values
 

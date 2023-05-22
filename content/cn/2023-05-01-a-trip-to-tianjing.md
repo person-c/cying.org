@@ -1,7 +1,7 @@
 ---
-title: 
+title: 天津一日游
 date: '2023-05-01'
-slug: 
+slug: 2023-05-01-a-trip-to-tianjing
 ---
 
 有花有酒春常在，无烛无灯夜自明。  

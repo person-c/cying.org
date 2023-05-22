@@ -1,19 +1,19 @@
 ---
-title: Advanced R-Function
+title: adr-Function
 date: '2022-10-23'
-slug: advanced-r-functions
+slug: adr-functions
 ---
 
 - [Functionals](#functionals)
-    - [`map` family](#map-family)
-    - [Reduce family](#reduce-family)
-    - [Predicate functionals](#predicate-functionals)
-    - [Base functions](#base-functions)
+  - [`map` family](#map-family)
+  - [Reduce family](#reduce-family)
+  - [Predicate functionals](#predicate-functionals)
+  - [Base functions](#base-functions)
 - [Function factories](#function-factories)
-    - [Basics](#basics)
-    - [Case study](#case-study)
+  - [Basics](#basics)
+  - [Case study](#case-study)
 - [Fuction operators](#fuction-operators)
-    - [Case study](#case-study-1)
+  - [Case study](#case-study-1)
 
 关于函数式编程语言，其一，需要有一类函数，也就是函数也是一个数据对象。其二，函数得是pure的。
 
@@ -33,6 +33,7 @@ A functional is a function that takes a function as an input and returns a vecto
 **Basics**
 
 - Simple achievement
+
   ```r
    simple_map <- function(x, f, ...) {
     out <- vector("list", length(x))
@@ -142,7 +143,7 @@ accumulate(l, intersect)
 
 #### Predicate functionals
 
-A __predicate functional__ applies a predicate to each element of a vector. purrr provides seven useful functions which come in three groups:
+A **predicate functional** applies a predicate to each element of a vector. purrr provides seven useful functions which come in three groups:
 
 - `some(.x, .p)` returns `TRUE` if _any_ element matches;  
     `every(.x, .p)` returns `TRUE` if _all_ elements match;  
@@ -170,6 +171,7 @@ apply(a2d, 1, mean)
 apply(a2d, 2, mean)
 #> [1]  3  8 13 18
 ```
+
 **Mathematical concerns**
 
 Functionals are very common in mathematics. The limit, the maximum, the roots (the set of points where `f(x) = 0`), and the definite integral are all functionals: given a function, they return a single number (or vector of numbers).

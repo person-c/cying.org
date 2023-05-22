@@ -1,13 +1,12 @@
 ---
-title: 在Linux中编写R软件
+title: execute R scripts in Linux
 date: 2023-01-12
-slug: use-r-script-in-linux
+slug: 2023-01-12-execute-r-cripts-in-linux
 ---
 
 - [argparse](#argparse)
 - [`read_yaml`](#read_yaml)
 - [parallel](#parallel)
-
 
 编写R软件。首先在脚本头部加入语句`#! /usr/bin/env Rscript`指定bash。
 
@@ -145,7 +144,6 @@ args
 #### parallel
 
 在开发这个脚本的过程中，如果把一些需要改变的参数硬编码在脚本里面，当把这个脚本部署到1000台服务器上运行，其中200台训练识别猫的模型，200台训练识别狗的模型，等等。把那200台训练识别猫的模型的服务器分成50组，每组4台，采用不通的学习速率和批次大小。这就叫生产环境。为了达到这个目的，采用硬编码的话就只能采用两种做法。要么用IDE远程连接到每一台服务器上，配置好以后执行程序。要么把参数写在里面，创建1000个不同的脚本，然后分别把这些脚本部署到服务器上。显然，这两种做法都是低效的。如果脚本接受命令行参数，那么我就可以在一个控制脚本里写好参数（甚至可以用程序生成），然后一次性批量地把同一个脚本部署到生产环境里。
-
 
 参考：  
 [argparse-vignette](https://cran.r-project.org/web/packages/argparse/vignettes/argparse.html)  

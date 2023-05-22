@@ -1,6 +1,6 @@
-baseurl: "https://weicui.org/"
+baseurl: "https://cying.org/"
 languageCode: "en-us"
-title: "Wei Cui"
+title: "雨雪天气"
 theme: "hugo-ivy"
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 hasCJKLanguage: true
@@ -10,7 +10,6 @@ footnotereturnlinkcontents: "↩"
 permalinks:
   cn: "/:sections/:year/:month/:slug/"
   en: "/:sections/:year/:month/:slug/"
-
 
 menu:
   main:
@@ -32,7 +31,6 @@ menu:
     - name: "To do"
       url: "/to-do/"
       weight: 1
-    
 
   cn:
     - name: "首页"
@@ -74,15 +72,10 @@ menu:
       url: "/cn/"
       weight: 6
 
-  
-
-
-
-      
 params:
-  description: "Wei Cui|崔伟"
+  description: "Rain and snow weather"
   footer: "&copy; 2022 - {Year}"
-  
+
   customJS:
     - "fix-toc.js"
     - "center-img.js"
@@ -95,7 +88,7 @@ params:
     - "header-link.js"
     - "hash-notes.js"
   githubContentURL: "https://github.com/sonwGlint/Myblog/tree/main/content"
-  
+
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
   favicon: favicon.ico
@@ -103,7 +96,6 @@ params:
   highlightjsLang: ["r", "yaml", "tex"]
   highlightjsTheme: "github"
   highlightjsVersion: "9.12.0"
-  
 
   logo:
     en:
@@ -115,12 +107,9 @@ params:
   lang:
     license:
       cn: "版权"
-    
 
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
     renderer:
       unsafe: yes
-
-
