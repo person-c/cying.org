@@ -1,7 +1,7 @@
 ---
 title: adr-meta programming
 date: 2023-01-10
-slug: 2023-01-10-adr-meta-programming
+slug: adr-meta-programming
 ---
 
 - [序](#序)

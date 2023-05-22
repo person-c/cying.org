@@ -2,7 +2,7 @@
 title: loop in tidyverse
 author: ''
 date: '2022-06-17'
-slug: 2022-06-17-loop-and-iterration-in-tidyverse
+slug: loop-and-iterration-in-tidyverse
 categories: []
 tags: [tidyverse]
 ---

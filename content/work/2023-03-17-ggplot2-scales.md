@@ -130,4 +130,3 @@ ggplot(mpg, aes(x = hwy, y = class)) +
 ```
 
 分类变量的特殊之处在于其Limits不是根据其终端点确定的，而是根据分类变量的每个可能的取值进行确定。它的breaks则没有任何区别，而他的labels则有多余的功能：它的label类似于字符向量，作为breaks的名称。
-

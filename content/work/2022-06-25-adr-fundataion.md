@@ -2,7 +2,7 @@
 title: adr-Foundation
 author: ''
 date: '2022-06-22'
-slug: 2022-06-25-adr-foundation
+slug: adr-foundation
 categories: []
 tags: [R]
 ---
