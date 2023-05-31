@@ -1,5 +1,5 @@
 ---
-title: What to do in the future
+title: Items will be added in the future
 date: '2023-06-01'
 ---
 

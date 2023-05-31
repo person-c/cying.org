@@ -1,6 +1,0 @@
----
-title: test
-date: 2015-03-01
----
-
-test
