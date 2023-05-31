@@ -81,7 +81,7 @@ menu:
       weight: 2
     - name: "Items"
       url: "/easybio/items/"
-      weight: 3
+      weight: 4
 
 params:
   description: "Rain and snow weather"
