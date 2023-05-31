@@ -72,6 +72,17 @@ menu:
       url: "/cn/"
       weight: 6
 
+  easybio:
+    - name: "Home"
+      url: "/easybio/"
+      weight: 1
+    - name: "extension"
+      url: "/easybio/extension/"
+      weight: 2
+    - name: "To do"
+      weight: 3
+      url: "/easybio/future/"
+
 params:
   description: "Rain and snow weather"
   footer: "&copy; 2022 - {Year}"
