@@ -79,7 +79,7 @@ menu:
     - name: "Extension"
       url: "/easybio/extension/"
       weight: 2
-    - name: "Future"
+    - name: "Items"
       url: "/easybio/items/"
       weight: 3
 
