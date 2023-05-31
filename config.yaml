@@ -76,10 +76,10 @@ menu:
     - name: "Home"
       url: "/easybio/"
       weight: 1
-    - name: "extension"
+    - name: "Extension"
       url: "/easybio/extension/"
       weight: 2
-    - name: "To do"
+    - name: "Future"
       weight: 3
       url: "/easybio/future/"
 
