@@ -81,7 +81,7 @@ menu:
       weight: 2
     - name: "Future"
       weight: 3
-      url: "/easybio/future/"
+      url: "/easybio/items/"
 
 params:
   description: "Rain and snow weather"
