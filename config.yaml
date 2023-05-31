@@ -80,8 +80,8 @@ menu:
       url: "/easybio/extension/"
       weight: 2
     - name: "Future"
-      weight: 3
       url: "/easybio/items/"
+      weight: 3
 
 params:
   description: "Rain and snow weather"
