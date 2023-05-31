@@ -76,13 +76,12 @@ menu:
     - name: "Home"
       url: "/easybio/"
       weight: 1
+    - name: "Items"
+      url: "/easybio/items/"
+      weight: 2
     - name: "Extension"
       url: "/easybio/extension/"
       weight: 2
-    - name: "Items"
-      url: "/easybio/items/"
-      weight: 4
-
 params:
   description: "Rain and snow weather"
   footer: "&copy; 2022 - {Year}"
