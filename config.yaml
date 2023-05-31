@@ -81,7 +81,7 @@ menu:
       weight: 2
     - name: "Extension"
       url: "/easybio/extension/"
-      weight: 2
+      weight: 3
 params:
   description: "Rain and snow weather"
   footer: "&copy; 2022 - {Year}"
