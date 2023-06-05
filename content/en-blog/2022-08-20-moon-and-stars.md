@@ -1,14 +1,14 @@
 ---
 title: Moon and stars
 date: '2022-08-20'
-slug: moon-and-stars
+slug: moon and stars
 ---
 
 When I was a youngster, about ten years old, living in the countryside, I'd like to lie on the chair in the yard to watch the white moon and twinkling stars, wondering whether there were sages or immortals with manas.  The summer evening breeze blew on my face, bringing a little cool, and various animals I could not identify made noise at night. It was a kind of feeling of calm and ease, but for now, I would never come back to have the chance to watch the night sky for both a busy life and faded stars because of more shiny neons. Have the stars vanished? No, they are just veined with something lighter.
 
 #### Faded stars
 
-Actually Not only disappeared the stars but also something vanished for being veined by some more eye-focused things. 
+Actually Not only disappeared the stars but also something vanished for being veined by some more eye-focused things.
 
 When I was in high school, the first time I learned Darwin's theories of evolution, I was astonished by his intelligence that he could see the vanished things—the vanished animals. That is not the laws of use and disuse, but just animals that have not adjusted to the environment have permanently died. If I were a biologist at that time, I definitely would have concluded laws of use and disuse. After that, I frequently remind myself that something else must be hiding beneath my view, aside from some things I can watch out for.
 

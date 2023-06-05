@@ -1,122 +1,85 @@
-baseurl: "https://cying.org/"
-languageCode: "en-us"
-title: "雨雪天气"
-theme: "hugo-ivy"
-ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+baseurl: 'https://cying.org/'
+languageCode: 'en-us'
+title: '雨雪天气'
+theme: 'hugo-ivy'
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", '_cache$']
 hasCJKLanguage: true
 enableEmoji: true
-footnotereturnlinkcontents: "↩"
+footnotereturnlinkcontents: '↩'
 
 permalinks:
-  cn: "/:sections/:year/:month/:slug/"
-  en: "/:sections/:year/:month/:slug/"
+  cn: '/:sections/:year/:month/:slug/'
+  en: '/:sections/:year/:month/:slug/'
 
 menu:
   main:
-    - name: "About"
-      url: "/en/about/"
-      weight: 3
-    - name: "Blog"
-      url: "/en/"
-      weight: 4
-    - name: "关于"
-      url: "/cn/about/"
-      weight: 5
-    - name: "日志"
-      url: "/cn/"
-      weight: 5
-    - name: "ItemList"
-      url: "/record/"
-      weight: 2
-    - name: "To do"
-      url: "/to-do/"
+    - name: 'About'
+      url: '/en/about/'
       weight: 1
-
-  cn:
-    - name: "首页"
-      url: "/"
-      weight: 1
-    - name: "关于"
-      url: "/cn/about/"
+    - name: 'work'
+      url: '/en-work/'
       weight: 2
-    - name: "日志"
-      url: "/cn/"
+    - name: '关于'
+      url: '/cn/about/'
       weight: 3
-    - name: "工作"
-      url: "/work/"
+    - name: '工作'
+      url: '/cn-work/'
       weight: 4
-    - name: "简历"
-      url: "/cn/vitae/"
-      weight: 5
-    - name: "English"
-      url: "/en/"
-      weight: 6
-
-  en:
-    - name: "Home"
-      url: "/"
-      weight: 1
-    - name: "About"
-      url: "/en/about/"
-      weight: 2
-    - name: "Blog"
-      url: "/en/"
-      weight: 3
-    - name: "Work"
-      url: "/work/"
-      weight: 4
-    - name: "Vitae"
-      url: "/en/vitae/"
-      weight: 5
-    - name: "中文"
-      url: "/cn/"
-      weight: 6
 
   easybio:
-    - name: "Home"
-      url: "/easybio/"
+    - name: 'Home'
+      url: '/easybio/'
       weight: 1
-    - name: "Items"
-      url: "/easybio/items/"
+    - name: 'Items'
+      url: '/easybio/items/'
       weight: 2
-    - name: "Extension"
-      url: "/easybio/extension/"
+    - name: 'Extension'
+      url: '/easybio/extension/'
       weight: 3
+
+  blog:
+    - name: 'Home'
+      url: '/en-blog/'
+      weight: 1
+    - name: '日志'
+      url: '/cn-blog/'
+      weight: 2
+
 params:
-  description: "Rain and snow weather"
-  footer: "&copy; 2022 - {Year}"
+  description: 'Rain and snow weather'
+  footer: '&copy; 2022 - {Year}'
 
   customJS:
-    - "fix-toc.js"
-    - "center-img.js"
-    - "right-quote.js"
-    - "no-highlight.js"
-    - "fix-footnote.js"
-    - "math-code.js"
-    - "external-link.js"
-    - "alt-title.js"
-    - "header-link.js"
-    - "hash-notes.js"
-  githubContentURL: "https://github.com/sonwGlint/Myblog/tree/main/content"
+    - 'fix-toc.js'
+    - 'center-img.js'
+    - 'right-quote.js'
+    - 'no-highlight.js'
+    - 'fix-footnote.js'
+    - 'math-code.js'
+    - 'external-link.js'
+    - 'alt-title.js'
+    - 'header-link.js'
+    - 'hash-notes.js'
+  githubContentURL: 'https://github.com/sonwGlint/Myblog/tree/main/content'
 
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
   favicon: favicon.ico
   highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
-  highlightjsLang: ["r", "yaml", "tex"]
-  highlightjsTheme: "github"
-  highlightjsVersion: "9.12.0"
+  highlightjsLang: ['r', 'yaml', 'tex']
+  highlightjsTheme: 'github'
+  highlightjsVersion: '9.12.0'
 
   logo:
     en:
-      img: "/images/logo.jpg"
-      url: "/"
-      alt: "live"
-      tag: ""
+      img: '/images/logo.jpg'
+      url: '/'
+      alt: 'live'
+      tag: ''
 
   lang:
     license:
-      cn: "版权"
+      cn: '版权'
 
 markup:
   defaultMarkdownHandler: goldmark

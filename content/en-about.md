@@ -1,6 +1,6 @@
 ---
-date: "2016-05-05T21:48:51-07:00"
+date: "2023-06=05"
 title: About
 slug: "en/about"
 ---
-wait to edit
+waiting for editing...
