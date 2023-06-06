@@ -1,8 +1,8 @@
 ---
-title: adr-Foundation
+title: advanced R - 基础
 author: ''
 date: '2022-06-22'
-slug: adr-foundation
+slug: adr foundation
 categories: []
 tags: [R]
 ---

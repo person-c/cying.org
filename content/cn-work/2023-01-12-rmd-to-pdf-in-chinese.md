@@ -1,7 +1,7 @@
 ---
-title: rmd to pdf in Chinese
+title: 使用Rmd生成中文PDF
 date: 2023-01-12
-slug: rmd-to-pdf-in-chinese
+slug: rmd to pdf in Chinese
 ---
 
 为了使得Rmardown生成的PDF支持中文以及交叉引用等功能，在YAML头部需要做一些设置。pdf_documnent2格式是对普通pdf格式的增强，增加了交叉引用的支持。你可以通过`?pdf_document2`查看该文档可以设置的选项。xelatex是对中文支持比较好的引擎。如下：

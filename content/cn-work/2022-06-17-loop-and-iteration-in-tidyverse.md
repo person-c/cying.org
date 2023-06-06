@@ -1,8 +1,8 @@
 ---
-title: loop in tidyverse
+title: tidyverse中的循环与迭代
 author: ''
 date: '2022-06-17'
-slug: loop-and-iterration-in-tidyverse
+slug: loop and iterration in tidyverse
 categories: []
 tags: [tidyverse]
 ---
