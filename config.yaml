@@ -80,10 +80,10 @@ menu:
       url: '/note/'
       weight: 1
     - name: 'blog'
-      url: '/enblog/'
+      url: '/en-blog/'
       weight: 2
     - name: '日志'
-      url: '/cnblog/'
+      url: '/cn-blog/'
       weight: 3
 
   easybio:
