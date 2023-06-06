@@ -1,7 +1,7 @@
 ---
-title: a trip to Tianjing
+title: a trip to Tianjin
 date: '2023-05-03'
-slug: a trip to Tianjing
+slug: a trip to Tianjin
 ---
 
 I have lost her permanently; she refused to meet with me.

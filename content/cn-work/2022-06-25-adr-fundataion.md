@@ -54,7 +54,7 @@ Name 指向 value;
 
 属性（attributes)，是向量的额外数据(metadata)，为name-value的结构(list)，通过R对象的箭头指向我们就可以找到它的额外数据。属性一般都是暂时的，除了name(name也是属性，想不到吧）和维度。如果想要永久的保留属性，我们需要通过class属性创建自己的S3 object。
 
-Dimension attributes powers atomic vector to matrix and array; list to list-matrices and list-arrays. Class attributes powers atomic vector to factors, date, date-times, difftime vectors; list to date.frame and tibble.
+Dimension attributes power atomic vector to matrix and array; list to list-matrices and list-arrays. Class attributes power atomic vector to factors, date, date-times, difftime vectors; list to date.frame and tibble.
 
 #### Atomic
 
@@ -62,7 +62,7 @@ Dimension attributes powers atomic vector to matrix and array; list to list-matr
 
 - Scalars(decimal, scientific, hexadecimal, `inf`, `-inf`, `Nan`).
 - Making longer vectors with `c()`.
-- Missing values(NA, not applicable). missing value tend to be infections except that some identity holds for all possible inputs.
+- Missing values(NA, not applicable). missing values tend to be infections except that some identity holds for all possible inputs.
 
    ```
    x <- c(NA, 5, NA, 10)
@@ -78,8 +78,8 @@ Dimension attributes powers atomic vector to matrix and array; list to list-matr
 Factors are useful when you know the set of possible values but they’re not all present in a given dataset;
 Built on top of integers. So be careful when treating them like strings; For this reason, it’s usually best to explicitly convert factors to character vectors if you need string-like behavior.  
 
-- Dates, date-times, durations:  
-Built on top of double;The value of the double (which can be seen by stripping the class) represents the number of days since 1970-01-01.
+- Dates, date-times, and durations:  
+Built on top of double; The value of the double (which can be seen by stripping the class) represents the number of days since 1970-01-01.
 
 #### List
 
@@ -90,14 +90,14 @@ Data.frame and tibble:
 - Subset: `$` partial matching; `df[, vars, drop = FALSE]`.
 - Rownames
 - Print
-- List-column;matrix, data.frame column.
+- List-column; matrix, data.frame column.
 
 #### Null
 
 NULL is special because it has a unique type, is always length zero, and can’t have any attributes. It has two usages:
 
 - To represent an empty vector (a vector of length zero) of arbitrary type.  
-- To represent an absent vector used as default vector when the argument is optional but the default value require some  computation. Contrast this with NA which is used to indicate that an element of a vector is absent.
+- To represent an absent vector is used as the default vector when the argument is optional but the default value requires some computation. Contrast this with NA which is used to indicate that an element of a vector is absent.
 
 ## Subset
 
@@ -124,7 +124,7 @@ y[factor("b")]
 #> 2.1
 ```
 
-Factor subsetting  has a drop argument. It controls whether or not levels (rather than dimensions) are preserved, and it defaults to FALSE. If you find you’re using drop = TRUE a lot it’s often a sign that you should be using a character vector instead of a factor.
+Factor subsetting has a drop argument. It controls whether or not levels (rather than dimensions) are preserved, and it defaults to FALSE. If you find you’re using drop = TRUE a lot it’s often a sign that you should be using a character vector instead of a factor.
 
 **Some wired**:  
  If you use a vector with `[[`, it will subset recursively, i.e. `x[[c(1, 2)]]`is equivalent to `x[[1]][[2]]`.
@@ -173,8 +173,8 @@ Loop: `for`(loop in vector); `while`(condition loop); `repeat`(loop forever).
 
 - `for` assigns the item to the current environment, overwriting any existing variable with the same name.
 - Preallocate output container `vector("list", length(x))`.
-- Instead `1:length(x)`, use `1:seq_along(x)`; because `:`works with both increasing and decreasing sequences.
-- Loops typically strip S3 vectors attributes;use `[[` to avoid.
+- Instead of `1:length(x)`, use `1:seq_along(x)`; because `:`works with both increasing and decreasing sequences.
+- Loops typically strip S3 vector attributes; use `[[`` to avoid.
   
 ```
 for (i in seq_along(xs)) {
@@ -185,7 +185,7 @@ for (i in seq_along(xs)) {
 **Stop loop**
 
 - next: exits the current iteration.
-- break: exits the entire for loop.
+- break: exits the entire for a loop.
 
 ## Functions
 
@@ -227,7 +227,7 @@ do.call(mean, args)
 **Function forms**
 
 - Prefix  
-  The function name comes before its arguments, like `foofy(a, b, c)`. These constitute of the majority of function calls in R.
+  The function name comes before its arguments, like `foofy(a, b, c)`. These constitute the majority of function calls in R.
 
 > By position, like `help(mean)`.
 > Using partial matching, like `help(top = mean)`, `options  (warnPartialMatchArgs = TRUE)`.
@@ -281,14 +281,14 @@ R uses lexical scoping: it looks up the values of names based on how a function 
 In R, function arguments are lazily evaluated: they’re only evaluated if accessed.
 
 - Promise  
-  A data structure including expression, environment and value.
+  A data structure including expression, environment, and value.
 - Default argument  
-  Default arguments are evaluated inside the function, but user supplied arguments evaluated in called environment.
+  Default arguments are evaluated inside the function, but user-supplied arguments are evaluated in the called environment.
 - Missing arguments  
   `missing()`
 
 **...(dot-dot-dot)**  
-`...` (pronounced dot-dot-dot). With it, a function can take any number of additional arguments. It can used with `list(...)` or `rlang::list2()` to support splicing.
+`...` (pronounced dot-dot-dot). With it, a function can take any number of additional arguments. It can use with `list`(...)` or `rlang::list2()` to support splicing.
 
 **Exiting a function**
 
@@ -425,14 +425,14 @@ Generally, an environment is similar to a named list, with four important except
   [[12]] $ <env: package:base>
   ```
 
-- Function environment  
-  Function environment is the function's package's namespace which define the functions.
+- Function environment
+  Function environment is the function's package's namespace which defines the functions.
 
   Every namespace environment has the same set of ancestors:
 
-  **Imports environments**: each namespace has an imports environment that contains bindings to all the functions used by the package. The imports environment is controlled by the package developer with the `NAMESPACE` file.  
+  **Imports environments**: each namespace has an import environment that contains bindings to all the functions used by the package. The import environment is controlled by the package developer with the `NAMESPACE` file.  
 
-  **Base namespace**: explicitly importing every base function would be tiresome, so the parent of the imports environment is the base namespace. The base namespace contains the same bindings as the base environment, but it has a different parent.
+  **Base namespace**: explicitly importing every base function would be tiresome, so the parent of the import environment is the base namespace. The base namespace contains the same bindings as the base environment, but it has a different parent.
 
   **Global environment**: The parent of the base namespace is the global environment.
 
@@ -463,7 +463,7 @@ Generally, an environment is similar to a named list, with four important except
   ```
 
 - Execution environments and call stack  
-  Executing a function creates two types of context.The execution environment is a child of the function environment, which is determined by where the function was created. There’s another type of context created by when the function was called: this is called the call stack.
+  Executing a function creates two types of context. The execution environment is a child of the function environment, which is determined by where the function was created. There’s another type of context created by when the function was called: this is called the call stack.
 
   1. Execution environments
 
@@ -495,12 +495,12 @@ Generally, an environment is similar to a named list, with four important except
 
   2. Call stack
 
-   The **caller** environment, accessed with `rlang::caller_env()`.
- Each element of the call stack is a **frame**, also known as an evaluation context.
+   The **caller** environment, is accessed with `rlang::caller_env`()`.
+   Each element of the call stack is a **frame**, also known as an evaluation context.
 
-   An expression (labelled with `expr`) giving the function call. This is what `traceback()` prints out.
+   An expression (labeled with `expr``) giving the function call. This is what`traceback()` prints out.
 
-   An environment (labelled with env), which is typically the execution environment of a function. There are two main exceptions: the environment of the global frame is the global environment, and calling eval() also generates frames, where the environment can be anything.
+   An environment (labeled with env), is typically the execution environment of a function. There are two main exceptions: the environment of the global frame is the global environment, and calling eval() also generates frames, where the environment can be anything.
 
   A parent, the previous call in the call stack.
 
@@ -567,8 +567,8 @@ set_a <- function(value) {
 }
 ```
 
-- As a hashmap.  
-   As hashmap is a data structure that takes constant, O(1), time to find an object based on its name. Environments provide this behavior by default, so can be used to simulate a hashmap.
+- As a hashmap
+  As hashmap is a data structure that takes constant, O(1), time to find an object based on its name. Environments provide this behavior by default, so can be used to simulate a hashmap.
 
 #### Condition system
 
