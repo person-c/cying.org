@@ -26,6 +26,66 @@ menu:
       url: '/cn-work/'
       weight: 4
 
+  en-work:
+    - name: 'Home'
+      url: '/'
+      weight: 1
+    - name: 'About'
+      url: '/en/about/'
+      weight: 2
+    - name: 'Work'
+      url: '/en-work/'
+      weight: 3
+    - name: '工作'
+      url: '/cn-work/'
+      weight: 4
+
+  cn-work:
+    - name: '主页'
+      url: '/'
+      weight: 1
+    - name: '关于'
+      url: '/cn/about/'
+      weight: 2
+    - name: '工作'
+      url: '/cn-work/'
+      weight: 3
+    - name: 'Work'
+      url: '/en-work/'
+      weight: 4
+  note:
+    - name: 'Home'
+      url: '/blog/'
+      weight: 1
+    - name: 'blog'
+      url: '/enblog/'
+      weight: 2
+    - name: '日志'
+      url: '/cnblog/'
+      weight: 3
+
+  enblog:
+    - name: 'Home'
+      url: '/note/'
+      weight: 1
+    - name: 'blog'
+      url: '/enblog/'
+      weight: 2
+    - name: '日志'
+      url: '/cnblog/'
+      weight: 3
+
+  cnblog:
+    - name: 'Home'
+      url: '/note/'
+      weight: 1
+    - name: 'blog'
+      url: '/enblog/'
+      weight: 2
+    - name: '日志'
+      url: '/cnblog/'
+      weight: 3
+
   easybio:
     - name: 'Home'
       url: '/easybio/'
@@ -36,14 +96,6 @@ menu:
     - name: 'Extension'
       url: '/easybio/extension/'
       weight: 3
-
-  blog:
-    - name: 'Home'
-      url: '/en-blog/'
-      weight: 1
-    - name: '日志'
-      url: '/cn-blog/'
-      weight: 2
 
 params:
   description: 'Rain and snow weather'
@@ -69,13 +121,6 @@ params:
   highlightjsLang: ['r', 'yaml', 'tex']
   highlightjsTheme: 'github'
   highlightjsVersion: '9.12.0'
-
-  logo:
-    en:
-      img: '/images/logo.jpg'
-      url: '/'
-      alt: 'live'
-      tag: ''
 
   lang:
     license:
