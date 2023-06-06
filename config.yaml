@@ -55,7 +55,7 @@ menu:
       weight: 4
   note:
     - name: 'Home'
-      url: '/blog/'
+      url: '/note/'
       weight: 1
     - name: 'blog'
       url: '/enblog/'
