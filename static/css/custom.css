@@ -56,7 +56,7 @@ body {
 .archive>p {
   display: inline-block;
   margin-right: 1em;
-  margin: 4px 2px;
+  margin: 2px;
 }
 
 .archive>ul>li>span,
