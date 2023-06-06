@@ -1,7 +1,7 @@
 ---
-title: ggplot2-scales
+title: ggplot2 scales
 date: 2023-03-17
-slug: ggplot2-scales
+slug: ggplot2 scales
 ---
 
 ## Position scales and axes

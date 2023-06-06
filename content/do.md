@@ -1,16 +1,21 @@
 ---
-title: to do
-slug: to do
+title: To do
+date: '2023-01-01'
+slug: do
 ---
+
 # 2023计划（白日做梦）
-##   不得不做的工作上的学习
+
+## 不得不做的工作上的学习
+
 #### Math
 
 [Coursera](https://www.coursera.org/)  
 [bilibili](https://www.bilibili.com/)考研数学  
 贝叶斯数据分析（吴喜之  
 多元统计分析（吴喜之）
-####  Machine Learning
+
+#### Machine Learning
 
 应用回归以及分类（基于R)  
 [mlr3 Machine Learning](https://introduction-to-machine-learning.netlify.app/)  
@@ -23,7 +28,7 @@ slug: to do
 [Web technologies](https://developer.mozilla.org/en-US/)  
 [youtube HTML and CSS](https://www.youtube.com/watch?v=G3e-cpL7ofc)
 
-#### Programming 
+#### Programming
 
 [data.table](https://rdatatable.gitlab.io/data.table/articles/datatable-programming.html#introduction)  
 [Python](https://www.w3school.com.cn/h.asp)  
@@ -48,7 +53,7 @@ grep, sed, awk。
 RNASeq的snakemake流程加入Rmarkdown自动生成文档。
 添加结果的邮件自动发送的功能。
 
-##   学点轻松的吧，家人们
+## 学点轻松的吧，家人们
 
 看一看哲学吧, 虽然完全看不懂：*<逻辑哲学论>*  
 看小说放松一下吧：*<鬼吹灯>*  

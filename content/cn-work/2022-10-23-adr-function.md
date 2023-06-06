@@ -1,7 +1,7 @@
 ---
-title: adr-Function
+title: advanced R - 函数
 date: '2022-10-23'
-slug: adr-functions
+slug: adr functions
 ---
 
 - [Functionals](#functionals)

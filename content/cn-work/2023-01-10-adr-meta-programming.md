@@ -1,7 +1,7 @@
 ---
-title: adr-meta programming
+title: advanced R - 元编程
 date: 2023-01-10
-slug: adr-meta-programming
+slug: adr meta programming
 ---
 
 - [序](#序)

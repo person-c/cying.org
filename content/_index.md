@@ -5,32 +5,12 @@ disable_mathjax: true
 disable_highlight: true
 ---
 
-## 序言
 
 一把像弯月一样的小刀，上面刻着“小楼一夜听春雨”，代表了一段尘封的往事。
 
-## 阅读提醒
+这个网站主要是用来记录编程相关笔记，方便我在各个地方查看我的资料。
+在工作目录下，大多数都是与我工作学习相关的资料，这些东西不一定是我自己写的，很大一部分都是我为了方便查阅资料，对一些资料复制粘贴的整合而形成的框架性的东西。其中一小部分，可能是我看书的笔记，以及一些特定问题的记录。笔记中的内容不一定是完全正确的。
 
-这个网站主要是用来记录一些资料，以及笔记，方便我在各个地方查看我的资料。虽然它兼带有一些我的吐槽和平常生活的记录，不过那不是主要的目的。如果你无意中发现了这个网站，有些阅读的提醒如下。
+目前从事于生物信息行业，平日里使用最多的语言是[R](https://www.r-project.org/), 其它的html, css, javascrip, python处于知道的的状态，正处于练习的状态，我将这些练习和一些笔记放在[这里](https://doc.cying.org)。对二代测序懂一点点，常见的生物信息分析懂一点。我把常见的生物信息分析方法都放在我开发的R包[easybio](https://github.com/snowGlint/easybio)。数学不好，只能用别人写好的方法，调调包这样子。对用[snakemake](https://snakemake.readthedocs.io/en/stable/)开发流程懂一点点，毕竟这是基于[python](https://www.python.org/)的，而我对[python](https://www.python.org/)一点点都不了解。
 
-1. 在work目录下，大多数都是与我工作学习相关的资料，这些东西不一定是我自己写的，很大一部分都是我为了方便查阅资料，对一些资料复制粘贴的整合而形成的框架性的东西。其中一小部分，可能是我看书的笔记，以及一些特定问题的记录。
-
-2. 对于日志，以及Blog目录下的东西，大多数都是我的吐槽以及日常的生活记录，其中的内容不免偏离了实际上的事实，以及添油加醋（对于回忆性的记录，都是容易美化自己的），阅读时应该慎重。
-
-3. 很多东西，也许我当时的确是这么认为的，但是人是会变的，现在的我可能并不这么认为了。但是我并不会修改我以前写的内容。当我写下这句话的时候是2022的冬天，你看到这句话的时候又是那一年的冬天呢？
-
-## 一些你可能感兴趣的问题
-
-1. 有了中文的日志为什么还要用英文写？
-
-主要有两方面的考虑。一来，用英文写作可以提高自己的英文水平。二来，有些东西是我想分享但又不想分享的。这样的话，倘若直接用中文写就显得太直接的，用英文写多了一层转义（当然这是针对母语是汉语的人，不过我的英文写作水平恐怕对母语是英语的人也要经过一层转义，毕竟这么垃圾的文章的确很难读的下去），就更加委婉。我想这是一种类似于近乡情怯的感觉吧。以前看《黄飞鸿》中十三姨总是对黄飞鸿说“爱老虎油”，大概用外语说就是这种委婉吧。
-
-2. 为什么没有评论区？别的网站都有。
-
-因为我不会，这个网站只是对另一个网站简单的copy，然后修改。我并不了解前端以及后端的知识。而且，实际上，我并不想别人对我评价，我并没有与别人交流想法的欲望。
-
-3. 你现在学习和工作在哪里？
-
-前路漫漫，以后或许会回答。
-
-Note: 该网站的仅是对[谢益辉](https://yihui.org/)网站的简单修改。
+This is my website for noting some of the issues related to programming. I am now engaged in the bioinformatics industry. My frequently used language is R, because it is easy to use [data.table](https://github.com/Rdatatable/data.table) to process tabular-like data, [ggplot2](https://github.com/tidyverse/ggplot2) to plot, and [Rmarkdown](https://github.com/rstudio/rmarkdown) to write reproducible reports(now there is an updated version of Rmarkdown:  [Quarto](https://quarto.org/) ). Also, it's my first programming language learned(or more strictly, the second programming language because I learned C programming in my undergraduate career in 2018 years). I have developed the [easybio](https://cying.org/easybio) package to simplify my daily work; It provided an interface to common bioinformatic analyses and is easy to extend. Recently, I am learning something related to Web development to better use Rmarkdown and design my website at will since this website now is just copied from [Yihui Xie](https://yihui.org) using [blogdown](https://github.com/rstudio/blogdown) even though I think this website is fully satisfying to me and fits my taste.

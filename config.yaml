@@ -97,6 +97,14 @@ menu:
       url: '/easybio/extension/'
       weight: 3
 
+  do:
+    - name: 'Todo'
+      url: '/do/'
+      weight: 1
+  record:
+    - name: 'record'
+      url: '/record/'
+      weight: 1
 params:
   description: 'Rain and snow weather'
   footer: '&copy; 2022 - {Year}'

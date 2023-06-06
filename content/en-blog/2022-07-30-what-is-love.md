@@ -1,5 +1,5 @@
 ---
-title: what is love
+title: What is love
 date: '2022-07-30'
 slug: what is love
 ---

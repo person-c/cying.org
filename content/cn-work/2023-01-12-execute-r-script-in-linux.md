@@ -1,7 +1,7 @@
 ---
-title: execute R scripts in Linux
+title: 在Linux中执行R脚本
 date: 2023-01-12
-slug: execute-r-script-in-linux
+slug: execute r script in linux
 ---
 
 - [argparse](#argparse)
