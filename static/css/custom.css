@@ -40,13 +40,13 @@ body {
   line-height: 1em;
 }
 
-.en-note header~p:first-of-type::first-line {
+.en-blog header~p:first-of-type::first-line {
   font-variant: small-caps;
   letter-spacing: .05em;
   font-size: 1.1em;
 }
 
-.en-note .main header~p:first-of-type::first-letter {
+.en-blog .main header~p:first-of-type::first-letter {
   font-size: 3em;
   padding: .1em .1em 0 0;
   float: left;
