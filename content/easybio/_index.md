@@ -8,27 +8,27 @@ date: '2023-05-31'
 
 This is a simple package to make my work easier, with some encapsulated functions to achieve daily common analysis with a uniform interface.
 
-## `analysis` function
+## `analyze` function
 
-All common analyses can be implemented by function `analysis`, by specifying the `object` and assigning `task` to the `object`. A concrete example is as follows:
+All common analyses can be implemented by function `analyze`, by specifying the `object` and assigning `task` to the `object`. A concrete example is as follows:
 
 ```r
 library(org.Hs.eg.db)
 data(gene_vector)
-y <- analysis(object = gene_vector, task = 'go')
+y <- analyze(object = gene_vector, task = 'go')
 ```
 
 Here it will automatically call the corresponding function to achieve analysis using some default arguments. The analysis's details can be adjusted by extra arguments if you customize some of the arguments. For example, you can customize the `ont` argument to analyze all GO categories analysis:
 
 ```r
-y <- analysis(object = gene_vector, task = 'go', ont = 'ALL')
+y <- analyze(object = gene_vector, task = 'go', ont = 'ALL')
 ```
 
 If you want to do KEGG analysis, just assign `task` to kegg.
 
 ```r
 data(kegg)
-y <- analysis(object = kegg, task = 'kegg')
+y <- analyze(object = kegg, task = 'kegg')
 ```
 
 ## `plot` function
