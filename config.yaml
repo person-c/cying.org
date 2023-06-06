@@ -8,8 +8,10 @@ enableEmoji: true
 footnotereturnlinkcontents: '↩'
 
 permalinks:
-  cn: '/:sections/:year/:month/:slug/'
-  en: '/:sections/:year/:month/:slug/'
+  cn-work: '/:sections/:year/:month/:slug/'
+  cn-blog: '/:sections/:year/:month/:slug/'
+  en-work: '/:sections/:year/:month/:slug/'
+  en-blog: '/:sections/:year/:month/:slug'
 
 menu:
   main:
