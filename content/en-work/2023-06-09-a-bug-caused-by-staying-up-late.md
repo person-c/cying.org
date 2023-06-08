@@ -1,6 +1,6 @@
 ---
-title: A bug  caused by staying up late
-date: '2023-06-09'
+title: A bug caused by staying up late
+date: 2023-06-09
 slug: a bug caused by staying up late
 ---
 
