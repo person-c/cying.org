@@ -8,33 +8,34 @@ slug: "cn/about"
 
 #### R programin
 
-[R语言教程](https://www.math.pku.edu.cn/teachers/lidf/)  
-[现代应用统计](https://github.com/XiangyunHuang)  
-[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)
+[R语言教程](https://www.math.pku.edu.cn/teachers/lidf/)
+[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)  
 [Advanced R](https://adv-r.hadley.nz/)  
-应用回归以及分类
+Learning R programming
 
-# git
+#### Git
 
 [gitbook](https://git-scm.com/book/zh/v2)
 
-# 机器学习
+#### Machine Learning
 
+应用回归以及分类  
 mlr3  
-超快的[data.table](https://github.com/Rdatatable/data.table)  
+[kaggle](https://www.kaggle.com/)
 
-# 一些论坛以及平台
+#### Forum
 
 coursea
 [R论坛](https://www.r-bloggers.com/)  
 [stackoverflow](https://stackoverflow.com/)  
-[统计之都](https://cosx.org/)  
-全球最大的数字图书馆[Zlibary](https://zh.z-lib.org/)  
-前端教程[w3school](https://www.w3school.com.cn/h.asp)
-机器学习竞赛[kaggle](https://www.kaggle.com/)
+[统计之都](https://cosx.org/)
+[前端教程w3school](https://www.w3school.com.cn/h.asp)
 
-# 英文写作的辅助工具
+####
 
-翻译神器：DeepL  
-语法检查：grammarly  
-改写：quillbot  
+英语词根与单词的说文解字
+Work Power Made Easy
+
+#### Regex
+
+[regex](https://deerchao.cn/tutorials/regex/regex.htm)
