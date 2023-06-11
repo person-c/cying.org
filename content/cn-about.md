@@ -8,7 +8,7 @@ slug: "cn/about"
 
 #### R programin
 
-[R语言教程](https://www.math.pku.edu.cn/teachers/lidf/)
+[R语言教程](https://www.math.pku.edu.cn/teachers/lidf/)   
 [数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)  
 [Advanced R](https://adv-r.hadley.nz/)  
 Learning R programming
@@ -28,12 +28,12 @@ mlr3
 coursea
 [R论坛](https://www.r-bloggers.com/)  
 [stackoverflow](https://stackoverflow.com/)  
-[统计之都](https://cosx.org/)
+[统计之都](https://cosx.org/) 
 [前端教程w3school](https://www.w3school.com.cn/h.asp)
 
 #### 英语
 
-英语词根与单词的说文解字
+英语词根与单词的说文解字  
 Work Power Made Easy
 
 #### Regex
@@ -42,6 +42,5 @@ Work Power Made Easy
 
 # 联系
 
-邮箱： <mail2cw@petalmail.com>
-
+邮箱： mail2cw@petalmail.com  
 [Github](https://github.com/snowGlint)
