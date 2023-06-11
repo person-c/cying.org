@@ -31,7 +31,7 @@ coursea
 [统计之都](https://cosx.org/)
 [前端教程w3school](https://www.w3school.com.cn/h.asp)
 
-####
+#### 英语
 
 英语词根与单词的说文解字
 Work Power Made Easy
@@ -39,3 +39,8 @@ Work Power Made Easy
 #### Regex
 
 [regex](https://deerchao.cn/tutorials/regex/regex.htm)
+
+# 联系
+
+邮箱： <mail2cw@petalmail.com>
+[Github](https://github.com/snowGlint)
