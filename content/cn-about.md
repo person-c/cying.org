@@ -3,7 +3,7 @@ date: "2022-05-05T21:48:51-07:00"
 title: About
 slug: "cn/about"
 ---
-
+***
 # 一些资源链接
 
 #### R programin
@@ -34,7 +34,7 @@ coursea
 #### 英语
 
 英语词根与单词的说文解字  
-Work Power Made Easy
+Word Power Made Easy
 
 #### Regex
 
