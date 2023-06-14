@@ -1,6 +1,7 @@
   <footer>
   {{ partial "foot_custom.html" . }}
   {{ partial "footer_highlightjs" . }}
+  {{ partial "comments.html" . }}
   {{ with .Site.Params.footer }}
   <hr>
   <div class="copyright">{{ replace . "{Year}" now.Year | markdownify }}</div>
