@@ -1,5 +1,5 @@
 ---
-title: learning with AI
+title: Learning with AI
 date: 2023-05-28
 slug: learning with AI
 ---
