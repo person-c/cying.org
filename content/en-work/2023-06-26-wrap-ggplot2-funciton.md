@@ -1,6 +1,6 @@
 ---
 title: Wrap ggplot2 function
-date: '2023-06-26'****
+date: '2023-06-26'
 slug: wrap ggplot2 function
 ---
 
