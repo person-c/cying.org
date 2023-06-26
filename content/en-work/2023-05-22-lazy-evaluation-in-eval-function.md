@@ -1,5 +1,5 @@
 ---
-title: lazy evaluation in eval function
+title: Lazy evaluation in eval function
 date: 2023-05-22
 slug: lazy-evaluation-in-eval-function
 ---
