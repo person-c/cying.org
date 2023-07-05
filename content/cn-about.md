@@ -42,5 +42,5 @@ Word Power Made Easy
 
 # 联系
 
-邮箱： send2cw@139.com
+邮箱： send2cw@139.com  
 [Github](https://github.com/snowGlint)
