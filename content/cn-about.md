@@ -38,7 +38,8 @@ Learning R programming
 
 [knitr](https://yihui.org/knitr/): 将Rmarkdown文件转换为markdown文件。  
 [pandoc](https://pandoc.org/): markdown文件转换为任意文件。   
-[data.table](https://github.com/Rdatatable/data.table): 语法简洁，超快地处理结构化数据。   
+[Rmarkdown](https://cosname.github.io/rmarkdown-guide/index.html): RMarkdown中文教程。
+[data.table](https://github.com/Rdatatable/data.table): 语法简洁，超快地处理结构化数据。  
 [ggplot2](https://ggplot2-book.org/): 图形语法，绘图。  
 [mlr3](https://mlr3.mlr-org.com/): 新一代机器学习框架。   
 [rlist](http://renkun-ken.github.io/rlist-tutorial/): R中用于处理非结构化数据地包，用环境实现了类似面向对象地链式操作。
