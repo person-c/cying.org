@@ -14,6 +14,7 @@ slug: "cn/about"
 [Advanced R](https://adv-r.hadley.nz/)  
 Learning R programming  
 [现代Javascript教程](https://zh.javascript.info/)
+[Web开发](https://developer.mozilla.org/zh-CN/)
 
 #### Git
 
