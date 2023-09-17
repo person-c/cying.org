@@ -8,49 +8,41 @@ slug: "cn/about"
 
 #### Programin
 
-[R manuals](https://rstudio.github.io/r-manuals/)  
-[R语言教程](https://www.math.pku.edu.cn/teachers/lidf/)  
-[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)  
-[Advanced R](https://adv-r.hadley.nz/)  
-Learning R programming  
+[R manuals](https://rstudio.github.io/r-manuals/)
+[R语言教程](https://www.math.pku.edu.cn/teachers/lidf/)
+[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)
+[Advanced R](https://adv-r.hadley.nz/)
+Learning R programming
+  
 [现代Javascript教程](https://zh.javascript.info/)
-[Web开发](https://developer.mozilla.org/zh-CN/)
-
-#### Git
-
-[gitbook](https://git-scm.com/book/zh/v2)
-
-#### Machine Learning
-
-应用回归以及分类  
-
-#### Regex
-
+[MDN](https://developer.mozilla.org/zh-CN/)
+  
 [regex](https://deerchao.cn/tutorials/regex/regex.htm)
+[git](https://git-scm.com/book/zh/v2)
 
 #### Forum
 
-[kaggle](https://www.kaggle.com/): 机器学习竞赛。  
-[coursea](https://www.coursera.org/): 公共课平台。  
-[R论坛](https://www.r-bloggers.com/)  
-[stackoverflow](https://stackoverflow.com/)    
+[kaggle - 机器学习](https://www.kaggle.com/)
+[coursea - 公共课](https://www.coursera.org/)
+[R论坛](https://www.r-bloggers.com/)
+[stackoverflow](https://stackoverflow.com/)
 [统计之都](https://cosx.org/)
 
 #### 软件及包
 
-[knitr](https://yihui.org/knitr/): 将Rmarkdown文件转换为markdown文件。    
-[Pandoc](https://pandoc.org/): 文档格式转换。  
-[data.table](https://github.com/Rdatatable/data.table): 处理结构化数据。  
-[rlist](http://renkun-ken.github.io/rlist-tutorial/): 处理非结构化数据。  
-[ggplot2](https://ggplot2-book.org/): 图形语法，绘图。    
-[mlr3](https://mlr3.mlr-org.com/): 新一代机器学习框架。 
+[knitr - rmarkdown2markdown](https://yihui.org/knitr/)
+[Pandoc - convert documnet formats](https://pandoc.org/)
+[data.table - extended data.frame in R](https://github.com/Rdatatable/data.table)
+[rlist - process unrelational data in R](http://renkun-ken.github.io/rlist-tutorial/)
+[ggplot2 - grammar of graphics](https://ggplot2-book.org/)
+[mlr3 - next machine learning framwork](https://mlr3.mlr-org.com/)
 
 #### 英语
 
-英语词根与单词的说文解字  
+英语词根与单词的说文解字
 Word Power Made Easy
 
 # 联系
 
-邮箱： send2cw@139.com  
+[邮箱](send2cw@139.com)
 [Github](https://github.com/snowGlint)
