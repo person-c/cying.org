@@ -57,7 +57,7 @@ menu:
       weight: 4
   note:
     - name: 'Home'
-      url: '/note/'
+      url: '/context/'
       weight: 1
     - name: 'blog'
       url: '/en-blog/'
@@ -68,7 +68,7 @@ menu:
 
   en-blog:
     - name: 'Home'
-      url: '/note/'
+      url: '/context/'
       weight: 1
     - name: 'blog'
       url: '/en-blog/'
@@ -79,7 +79,7 @@ menu:
 
   cn-blog:
     - name: 'Home'
-      url: '/note/'
+      url: '/context/'
       weight: 1
     - name: 'blog'
       url: '/en-blog/'
