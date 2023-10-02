@@ -55,7 +55,7 @@ menu:
     - name: 'Work'
       url: '/en-work/'
       weight: 4
-  note:
+  context:
     - name: 'Home'
       url: '/context/'
       weight: 1
@@ -137,7 +137,4 @@ params:
       cn: '版权'
 
 markup:
-  defaultMarkdownHandler: goldmark
-  goldmark:
-    renderer:
-      unsafe: yes
+  defaultMarkdownHandler: pandoc

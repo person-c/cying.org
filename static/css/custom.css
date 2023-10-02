@@ -18,7 +18,7 @@ body {
 }
 .main {
   padding: 2em 40px;
-  hyphens: auto;
+  --webkit-hyphens: auto;
   border-left: none;
 }
 .menu li:not([class]) a, a:hover, .copyright a {
