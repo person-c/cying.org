@@ -55,7 +55,7 @@ menu:
     - name: 'Work'
       url: '/en-work/'
       weight: 4
-  note:
+  context:
     - name: 'Home'
       url: '/context/'
       weight: 1
