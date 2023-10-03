@@ -10,7 +10,7 @@ slug: virtual machine profile
 
 vmware player设置网络模式为NAT模式。
 
-物理主机中运行`ipcongfig`查看WLNA ipv4地址。v2ray中开启允许局域网连接，查看局域网socket, http端口号。
+物理主机中运行`ipcongfig`查看WLAN ipv4地址。v2ray中开启允许局域网连接，查看局域网socket, http端口号。
  
 ```cmd
 ipconfig
@@ -41,3 +41,15 @@ sudo apt-get install gnome-tweaks
 **软件下载**
 
 对于必要的软件通过包管理工具apt 或者 sanp下载。非必要的软件建议使用conda管理，若codna中没有，则建议使用压缩包解压。
+
+**R配置**
+
+使用vscode作为代码编辑器，直接参考[vscode-R文档](https://github.com/REditorSupport/vscode-R/wiki/Getting-Started)配置即可。
+
+其它的编程语言同样直接参考[vscode documentation](https://code.visualstudio.com/docs)
+
+vscode 可以直接使用 snap 下载
+
+```bash
+snap install code
+```
