@@ -52,4 +52,18 @@ vscode 可以直接使用 snap 下载
 
 ```bash
 snap install code
+``
+
+**扩展虚拟机磁盘空间**
+
+使用中如果遇到磁盘空间不够的情况下可以扩展磁盘空间。
+
+首先在虚拟机的设置中扩展磁盘空间，然后在系统中下载Gparted软件，分配该磁盘空间。
+
+```bash
+sudo apt install GParted
 ```
+
+**查看系统信息**
+
+[常用命令](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
