@@ -1,5 +1,5 @@
 ---
-title: advanced R - 函数
+title: 'advanced R -functions'
 date: '2022-10-23'
 slug: adr functions
 ---
