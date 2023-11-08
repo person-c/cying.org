@@ -60,3 +60,5 @@ ggraph(graph, aes()，layout = "auto" , circular = FALSE) +
 ```
 
 其提供了一系列`geom_node_*`以及`geom_edge_*`函数用于对节点以及连接线进行映射。其中在`ggraph`中比较重要的参数是`layout`参数，它决定了整体的布局。`circular`参数决定了是否将图形布局为圆形。在绘图的时候应该考虑多种布局，以更直观的发现节点之间的相互关系。
+
+更多见[reference](https://ggraph.data-imaginist.com/reference/index.html)
