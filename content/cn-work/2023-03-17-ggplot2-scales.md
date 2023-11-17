@@ -4,6 +4,21 @@ date: 2023-03-17
 slug: ggplot2 scales
 ---
 
+- [Position scales and axes](#position-scales-and-axes)
+  - [Numeric positions and scales](#numeric-positions-and-scales)
+  - [Discrete position scales](#discrete-position-scales)
+  - [Binned position scales](#binned-position-scales)
+- [Color scale](#color-scale)
+  - [Continuous](#continuous)
+  - [discrete color](#discrete-color)
+  - [Binned colour scales](#binned-colour-scales)
+- [Alpha scales](#alpha-scales)
+- [Size scales](#size-scales)
+- [Shape scales](#shape-scales)
+- [Linewidth](#linewidth)
+- [Linetype scales](#linetype-scales)
+- [Manual scales](#manual-scales)
+
 ggplot2中所有映射都由scale_*函数控制。
 
 # Position scales and axes
