@@ -31,7 +31,7 @@ p + geom_segment(aes(x = 0, xend = 1, y = 0, yend = 1), color = "red", linetype 
 ```
 
 
-# wrap ggplot2 function
+## wrap ggplot2 function
 
 在ggplot2的`aes`函数中都使用了非标准性计算(NSE)，如果你想对`aes`传递参数, 则应该使用`{{}}`包裹这些参数。
 关于NSE的讨论可以参考[Advanced R](https://adv-r.hadley.nz/)。一个例子见[这里](https://cying.org/en-work/2023/06/wrap-ggplot2-function/)。
