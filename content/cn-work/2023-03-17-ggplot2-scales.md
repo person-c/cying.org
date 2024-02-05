@@ -19,7 +19,7 @@ slug: ggplot2 scales
 - [Linetype scales](#linetype-scales)
 - [Manual scales](#manual-scales)
 
-ggplot2中所有映射都由scale_*函数控制。
+ggplot2中所有映射都由scale_*函数控制, 使用`vignette("ggplot2-specs")`查看所有的映射。
 
 # Position scales and axes
 

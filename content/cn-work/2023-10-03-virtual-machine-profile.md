@@ -4,6 +4,10 @@ date: 2023-10-03
 slug: virtual machine profile
 ---
 
+**建议直接使用WSL2**
+
+-------------------------
+
 ~~[这里](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)下载vmware playrer~~，[这里](https://ubuntu.com/download/desktop)下载ubuntu镜像。打开vmware，按照提示一路选择操作既可。
 
 >之前下载的是vmware player, 但是后来设置网络时候，发现这玩意并不好用，好多教程都是使用vmware workstation示例，让我想起这以前刷到过的帖子 - 为什么vmware 网上的密钥好多都可以用。尝试了以下，只能说的确可以用，还很多。
