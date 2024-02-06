@@ -243,3 +243,9 @@ span.hash-note::before { content: "　# "; }
     padding-left: 10px;
   }
 }
+
+
+.fullwidth {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
