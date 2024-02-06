@@ -246,5 +246,6 @@ span.hash-note::before { content: "　# "; }
 
 
 .fullwidth {
-  width: 60vw;
+  width: 720px;
+  margin-left: calc(50% - 50vw);
 }
