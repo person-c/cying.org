@@ -91,27 +91,4 @@ stat$data[[2]] |> head(n = 5)
 
 需要注意的是，ggplot2会先对数据进行所有的`scale`操作然后再进行各种统计计算，例如如果添加了`scale_x_log10`函数，则其先对原数据进行`log10`映射，然后再进行统计量的计算。
 
-<script>
-document.querySelectorAll('pre,table,#TableOfContents, highlight').forEach(node => {
-  function fullwidth(el) {
-    el.classList.add('fullwidth');
-  }
-  switch (node.tagName) {
-    case 'PRE':
-      const el = node.firstElementChild;
-      el?.tagName === 'CODE' && el.scrollWidth > el.offsetWidth && fullwidth(el.parentNode);
-      break;
-    case 'TABLE':
-      const p = node.parentElement;
-      p && p.offsetWidth < node.offsetWidth && fullwidth(node);
-      break;
-    default:
-      // assume it's #TableOfContents for now
-      node.querySelectorAll('a').forEach(a => {
-        // if a TOC line is wrapped, make TOC full-width
-        !node.classList.contains('fullwidth') && a.getClientRects().length > 1 && fullwidth(node);
-      });
-  }
-});
-</script>
 
