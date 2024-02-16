@@ -9,9 +9,9 @@ footnotereturnlinkcontents: '↩'
 
 permalinks:
   cn-work: '/:sections/:year/:month/:slug/'
-  cn-blog: '/:sections/:year/:month/:slug/'
+  # cn-blog: '/:sections/:year/:month/:slug/'
   en-work: '/:sections/:year/:month/:slug/'
-  en-blog: '/:sections/:year/:month/:slug'
+  # en-blog: '/:sections/:year/:month/:slug'
 
 menu:
   main:
@@ -66,27 +66,27 @@ menu:
       url: '/cn-blog/'
       weight: 3
 
-  en-blog:
-    - name: 'Home'
-      url: '/context/'
-      weight: 1
-    - name: 'blog'
-      url: '/en-blog/'
-      weight: 2
-    - name: '日志'
-      url: '/cn-blog/'
-      weight: 3
+  # en-blog:
+  #   - name: 'Home'
+  #     url: '/context/'
+  #     weight: 1
+  #   - name: 'blog'
+  #     url: '/en-blog/'
+  #     weight: 2
+  #   - name: '日志'
+  #     url: '/cn-blog/'
+  #     weight: 3
 
-  cn-blog:
-    - name: 'Home'
-      url: '/context/'
-      weight: 1
-    - name: 'blog'
-      url: '/en-blog/'
-      weight: 2
-    - name: '日志'
-      url: '/cn-blog/'
-      weight: 3
+  # cn-blog:
+  #   - name: 'Home'
+  #     url: '/context/'
+  #     weight: 1
+  #   - name: 'blog'
+  #     url: '/en-blog/'
+  #     weight: 2
+  #   - name: '日志'
+  #     url: '/cn-blog/'
+  #     weight: 3
 
   easybio:
     - name: 'Home'
