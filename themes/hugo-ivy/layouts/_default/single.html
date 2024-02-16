@@ -6,7 +6,7 @@
 }} {{ partial "footer.html" . }}
 
 <script>
-  document.querySelectorAll('.highlight').forEach((node) => {
+  document.querySelectorAll('code').forEach((node) => {
     if (node.offsetWidth > node.parentNode.offsetWidth) {
       node.classList.add('fullwidth');
     }
