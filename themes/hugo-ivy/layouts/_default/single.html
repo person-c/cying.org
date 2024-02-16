@@ -7,7 +7,7 @@
 
 <script>
   document.querySelectorAll('.highlight').forEach((node) => {
-    if (node.offsetWidth > 720) {
+    if (node.offsetWidth > node.parentNode.offsetWidth) {
       node.classList.add('fullwidth');
     }
   });
