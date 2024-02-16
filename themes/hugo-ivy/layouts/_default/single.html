@@ -7,7 +7,7 @@
 
 <script>
   document.querySelectorAll('code').forEach((node) => {
-    if (node.offsetWidth > document.querySelector('.main').offsetWidth) {
+    if (node.scrollWidth > node.offsetWidth) {
       node.classList.add('fullwidth');
     }
   });
