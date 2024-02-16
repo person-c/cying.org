@@ -11,6 +11,10 @@
   .main {
     margin-left: calc(50% - 250px);
   }
+  .fullwidth {
+  width: 800px;
+  margin-left: -60px;
+}
 }
 body {
   width: auto;
@@ -245,7 +249,4 @@ span.hash-note::before { content: "　# "; }
 }
 
 
-.fullwidth {
-  width: 800px;
-  margin-left: -60px;
-}
+
