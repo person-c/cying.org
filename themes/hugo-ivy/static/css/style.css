@@ -500,7 +500,7 @@ tr:nth-child(even) {
     margin-left: -60px;
   }
 }
-/* body {
+body {
   width: auto;
   padding: 0;
 }
@@ -517,6 +517,7 @@ a:hover,
 .menu-extra {
   list-style: circle;
 }
+
 .en-work header ~ p:first-of-type::first-line {
   font-variant: small-caps;
   letter-spacing: 0.05em;
@@ -554,7 +555,7 @@ a:hover,
   color: #666;
   font-size: 0.9em;
 }
-
+/*
 code {
   hyphens: none;
 }
@@ -694,7 +695,7 @@ span.hash-note::before {
   border-top: 4px double #999;
   margin-bottom: 47px;
 }
-
+*/
 @media screen and (max-width: 960px) {
   h1,
   h2,
@@ -769,4 +770,4 @@ span.hash-note::before {
     border-left: none;
     padding-left: 10px;
   }
-} */
+}
