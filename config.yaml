@@ -1,0 +1,146 @@
+baseurl: 'https://cying.org/'
+languageCode: 'en-us'
+title: '雨雪天气'
+theme: 'hugo-ivy'
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", '_cache$']
+hasCJKLanguage: true
+enableEmoji: true
+footnotereturnlinkcontents: '↩'
+
+permalinks:
+  cn-work: '/:sections/:year/:month/:slug/'
+  # cn-blog: '/:sections/:year/:month/:slug/'
+  en-work: '/:sections/:year/:month/:slug/'
+  # en-blog: '/:sections/:year/:month/:slug'
+
+menu:
+  main:
+    - name: 'About'
+      url: '/en/about/'
+      weight: 1
+    - name: 'work'
+      url: '/en-work/'
+      weight: 2
+    - name: '关于'
+      url: '/cn/about/'
+      weight: 3
+    - name: '工作'
+      url: '/cn-work/'
+      weight: 4
+
+  en-work:
+    - name: 'Home'
+      url: '/'
+      weight: 1
+    - name: 'About'
+      url: '/en/about/'
+      weight: 2
+    - name: 'Work'
+      url: '/en-work/'
+      weight: 3
+    - name: 'Stat'
+      url: '/stat/'
+      weight: 4
+    - name: '工作'
+      url: '/cn-work/'
+      weight: 5
+
+  cn-work:
+    - name: '主页'
+      url: '/'
+      weight: 1
+    - name: '关于'
+      url: '/cn/about/'
+      weight: 2
+    - name: '工作'
+      url: '/cn-work/'
+      weight: 3
+    - name: 'Work'
+      url: '/en-work/'
+      weight: 4
+  story:
+    - name: 'Home'
+      url: '/story/'
+      weight: 1
+    - name: 'blog'
+      url: '/en-blog/'
+      weight: 2
+    - name: '日志'
+      url: '/cn-blog/'
+      weight: 3
+
+  en-blog:
+    - name: 'Home'
+      url: '/story/'
+      weight: 1
+    - name: 'blog'
+      url: '/en-blog/'
+      weight: 2
+    - name: '日志'
+      url: '/cn-blog/'
+      weight: 3
+
+  cn-blog:
+    - name: 'Home'
+      url: '/story/'
+      weight: 1
+    - name: 'blog'
+      url: '/en-blog/'
+      weight: 2
+    - name: '日志'
+      url: '/cn-blog/'
+      weight: 3
+
+  easybio:
+    - name: 'Home'
+      url: '/easybio/'
+      weight: 1
+    - name: 'Items'
+      url: '/easybio/items/'
+      weight: 2
+    - name: 'Extension'
+      url: '/easybio/extension/'
+      weight: 3
+
+  do:
+    - name: 'Todo'
+      url: '/do/'
+      weight: 1
+  record:
+    - name: 'record'
+      url: '/record/'
+      weight: 1
+params:
+  description: 'Rain and snow weather'
+  footer: '&copy; 2022 - {Year}'
+
+  customJS:
+    - 'fix-toc.js'
+    - 'center-img.js'
+    - 'right-quote.js'
+    - 'no-highlight.js'
+    - 'fix-footnote.js'
+    - 'math-code.js'
+    - 'external-link.js'
+    - 'alt-title.js'
+    - 'header-link.js'
+    - 'hash-notes.js'
+  githubContentURL: 'https://github.com/sonwGlint/Myblog/tree/main/content'
+
+  MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
+  MathJaxVersion: 2.7.5
+  favicon: favicon.ico
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang: ['r', 'yaml', 'tex']
+  highlightjsTheme: 'github'
+  highlightjsVersion: '9.12.0'
+
+  lang:
+    license:
+      cn: '版权'
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: yes
