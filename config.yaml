@@ -10,6 +10,7 @@ footnotereturnlinkcontents: '↩'
 permalinks:
   cn-work: '/:sections/:year/:month/:slug/'
   en-work: '/:sections/:year/:month/:slug/'
+  easybio: '/:sections/:year/:month/:slug/'
 
 menu:
   main:
@@ -80,7 +81,7 @@ params:
     - 'alt-title.js'
     - 'header-link.js'
     - 'hash-notes.js'
-  githubContentURL: 'https://github.com/sonwGlint/Myblog/tree/main/content'
+  githubContentURL: 'https://github.com/person-c/cying.org/tree/main/content'
 
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
