@@ -543,12 +543,12 @@ a:hover,
   float: left;
   line-height: 1em;
 }
-
+/* 
 .archive > p {
-  display: inline-block;
+  display: inline-bloc;
   margin-right: 1em;
   margin: 2px;
-}
+} */
 
 .archive > ul > li > span,
 .hash-note {
