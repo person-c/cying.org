@@ -115,14 +115,14 @@ li {
 /* Links */
 
 a {
-  color: black;
+  color: gray60;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px solid;
+  border-bottom: 0px solid;
+
 }
 
-a:hover {
-}
+
 
 sup a {
   border-bottom: none;
@@ -543,12 +543,12 @@ a:hover,
   float: left;
   line-height: 1em;
 }
-/* 
+
 .archive > p {
-  display: inline-bloc;
+  display: inline-block;
   margin-right: 1em;
   margin: 2px;
-} */
+}
 
 .archive > ul > li > span,
 .hash-note {
