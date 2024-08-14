@@ -22,6 +22,7 @@ Learning R programming
   
 [regex](https://deerchao.cn/tutorials/regex/regex.htm)
 [git](https://git-scm.com/book/zh/v2)
+[爬虫](https://cosx.org/2017/08/web-scrap-tools/)
 
 #### Forum
 
