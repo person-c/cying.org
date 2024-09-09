@@ -68,7 +68,7 @@ menu:
 
 params:
   description: 'Rain and snow weather'
-  footer: '&copy; 2022 - {Year}'
+  footer: '&copy; 2022 - {Year} | [GitHub](https://github.com/person-c)'
 
   customJS:
     - 'fix-toc.js'
