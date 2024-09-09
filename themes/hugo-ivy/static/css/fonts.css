@@ -5,6 +5,7 @@ body {
     'source-han-serif-sc', 'Source Han Serif SC', 'Source Han Serif CN',
     'Source Han Serif TC', 'Source Han Serif TW', 'Source Han Serif',
     'Noto Serif CJK SC', 'Songti SC', 'Microsoft YaHei', serif;
+  font-weight: 400;
 }
 .home blockquote,
 .cn blockquote,
@@ -20,6 +21,7 @@ body {
 code {
   font-family: Consolas, Courier, 'Courier New', 'STKaiti', 'KaiTi', 'SimKai',
     monospace;
+  font-weight: 200;
 }
 pre,
 code {
