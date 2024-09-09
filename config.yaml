@@ -89,7 +89,7 @@ params:
   highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
   highlightjsLang: ['yaml', 'tex']
   highlightjsTheme: 'github'
-  highlightjsVersion: '9.12.0'
+  highlightjsVersion: '11.9.0'
 
   lang:
     license:
