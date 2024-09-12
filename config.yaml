@@ -9,9 +9,8 @@ footnotereturnlinkcontents: '↩'
 
 permalinks:
   cn-work: '/:sections/:year/:month/:slug/'
-  # cn-blog: '/:sections/:year/:month/:slug/'
   en-work: '/:sections/:year/:month/:slug/'
-  # en-blog: '/:sections/:year/:month/:slug'
+  easybio: '/:sections/:year/:month/:slug/'
 
 menu:
   main:
@@ -38,9 +37,6 @@ menu:
     - name: 'Work'
       url: '/en-work/'
       weight: 3
-    - name: 'Stat'
-      url: '/stat/'
-      weight: 4
     - name: '工作'
       url: '/cn-work/'
       weight: 5
@@ -58,38 +54,6 @@ menu:
     - name: 'Work'
       url: '/en-work/'
       weight: 4
-  story:
-    - name: 'Home'
-      url: '/story/'
-      weight: 1
-    - name: 'blog'
-      url: '/en-blog/'
-      weight: 2
-    - name: '日志'
-      url: '/cn-blog/'
-      weight: 3
-
-  en-blog:
-    - name: 'Home'
-      url: '/story/'
-      weight: 1
-    - name: 'blog'
-      url: '/en-blog/'
-      weight: 2
-    - name: '日志'
-      url: '/cn-blog/'
-      weight: 3
-
-  cn-blog:
-    - name: 'Home'
-      url: '/story/'
-      weight: 1
-    - name: 'blog'
-      url: '/en-blog/'
-      weight: 2
-    - name: '日志'
-      url: '/cn-blog/'
-      weight: 3
 
   easybio:
     - name: 'Home'
@@ -102,17 +66,9 @@ menu:
       url: '/easybio/extension/'
       weight: 3
 
-  do:
-    - name: 'Todo'
-      url: '/do/'
-      weight: 1
-  record:
-    - name: 'record'
-      url: '/record/'
-      weight: 1
 params:
   description: 'Rain and snow weather'
-  footer: '&copy; 2022 - {Year}'
+  footer: '&copy; 2022 - {Year} | [GitHub](https://github.com/person-c)'
 
   customJS:
     - 'fix-toc.js'
@@ -125,15 +81,15 @@ params:
     - 'alt-title.js'
     - 'header-link.js'
     - 'hash-notes.js'
-  githubContentURL: 'https://github.com/sonwGlint/Myblog/tree/main/content'
+  githubContentURL: 'https://github.com/person-c/cying.org/tree/main/content'
 
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
   favicon: favicon.ico
   highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
-  highlightjsLang: ['r', 'yaml', 'tex']
+  highlightjsLang: ['yaml', 'tex']
   highlightjsTheme: 'github'
-  highlightjsVersion: '9.12.0'
+  highlightjsVersion: '11.9.0'
 
   lang:
     license:
