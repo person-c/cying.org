@@ -9,7 +9,6 @@ slug: "cn/about"
 
 # 一些资源链接
 
-#### Programin
 
 [R manuals](https://rstudio.github.io/r-manuals/)
 [R语言教程](https://www.math.pku.edu.cn/teachers/lidf/)
@@ -24,7 +23,6 @@ Learning R programming
 [git](https://git-scm.com/book/zh/v2)
 [爬虫](https://cosx.org/2017/08/web-scrap-tools/)
 
-#### Forum
 
 [kaggle - 机器学习](https://www.kaggle.com/)
 
@@ -33,20 +31,9 @@ Learning R programming
 [stackoverflow](https://stackoverflow.com/)
 [统计之都](https://cosx.org/)
 
-#### 软件及包
 
 [Pandoc-Swiss Army Knife for multiple format conversion](https://pandoc.org/)
-
 [ImageMagick - powerful image process tools](https://github.com/ImageMagick/ImageMagick)
 
-#### 英语
+# Plan
 
-英语词根与单词的说文解字
-
-Word Power Made Easy
-
-# 联系
-
-<a href="mailto:send2cw@139.com">邮箱</a>
-
-[Github](https://github.com/snowGlint)
