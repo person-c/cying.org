@@ -24,16 +24,15 @@ Learning R programming
 [爬虫](https://cosx.org/2017/08/web-scrap-tools/)
 
 
-[kaggle - 机器学习](https://www.kaggle.com/)
-
+[kaggle](https://www.kaggle.com/)
 [coursea](https://www.coursera.org/)
 [R bloggers](https://www.r-bloggers.com/)
 [stackoverflow](https://stackoverflow.com/)
 [统计之都](https://cosx.org/)
 
 
-[Pandoc-Swiss Army Knife for multiple format conversion](https://pandoc.org/)
-[ImageMagick - powerful image process tools](https://github.com/ImageMagick/ImageMagick)
+[Pandoc](https://pandoc.org/)
+[ImageMagick](https://github.com/ImageMagick/ImageMagick)
 
 # Plan
 
