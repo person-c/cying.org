@@ -26,6 +26,9 @@ menu:
     - name: '工作'
       url: '/cn-work/'
       weight: 4
+    - name: '日志'
+      url: 'blog'
+      weight: 5
 
   en-work:
     - name: 'Home'
